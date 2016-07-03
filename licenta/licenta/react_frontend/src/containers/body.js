@@ -9,8 +9,9 @@ import React, {Component} from 'react';
 import { connect } from 'react-redux';
 import { bindActionCreators } from 'redux';
 
-/* Components */
-import MainApp from '../components/mainapp';
+/* Components and Containers */
+import MainApp from './mainapp';
+
 import SearchApp from '../components/search';
 import Project from '../components/project';
 

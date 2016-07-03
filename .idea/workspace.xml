@@ -2,12 +2,16 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="eab26bbd-cc6b-42d7-b3f2-ffb590d23125" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/licenta/licenta/react_frontend/src/components/mainapp.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/licenta/licenta/react_frontend/src/components/project.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/licenta/licenta/react_frontend/src/components/search.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/licenta/licenta/react_frontend/src/containers/mainapp.js" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/licenta/licenta/react_frontend/src/components/mainapp.js" afterPath="" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/licenta/licenta/react_frontend/built/react_frontend/css/style.css" afterPath="$PROJECT_DIR$/licenta/licenta/react_frontend/built/react_frontend/css/style.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/licenta/licenta/react_frontend/src/actions/index.js" afterPath="$PROJECT_DIR$/licenta/licenta/react_frontend/src/actions/index.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/licenta/licenta/react_frontend/src/containers/body.js" afterPath="$PROJECT_DIR$/licenta/licenta/react_frontend/src/containers/body.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/licenta/licenta/react_frontend/style/css/style.css" afterPath="$PROJECT_DIR$/licenta/licenta/react_frontend/style/css/style.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/licenta/licenta/static/css/style.css" afterPath="$PROJECT_DIR$/licenta/licenta/static/css/style.css" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/licenta/licenta/static/react_frontend/bundle.js" afterPath="$PROJECT_DIR$/licenta/licenta/static/react_frontend/bundle.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/licenta/licenta/static/react_frontend/css/style.css" afterPath="$PROJECT_DIR$/licenta/licenta/static/react_frontend/css/style.css" />
     </list>
     <ignored path="Licenta.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -29,38 +33,59 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="app.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/licenta/licenta/react_frontend/src/components/app.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="135">
-              <caret line="9" column="8" selection-start-line="9" selection-start-column="8" selection-end-line="9" selection-end-column="8" />
-              <folding>
-                <element signature="n#!!doc" expanded="true" />
-                <element signature="e#85#124#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="body.js" pinned="false" current-in-tab="true">
+      <file leaf-file-name="body.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/licenta/licenta/react_frontend/src/containers/body.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="495">
-              <caret line="35" column="30" selection-start-line="35" selection-start-column="30" selection-end-line="35" selection-end-column="30" />
+            <state relative-caret-position="145">
+              <caret line="18" column="24" selection-start-line="18" selection-start-column="24" selection-end-line="18" selection-end-column="24" />
               <folding>
                 <element signature="e#109#147#0" expanded="true" />
-                <element signature="e#210#254#0" expanded="true" />
+                <element signature="e#225#257#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file leaf-file-name="mainapp.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/licenta/licenta/react_frontend/src/components/mainapp.js">
+        <entry file="file://$PROJECT_DIR$/licenta/licenta/react_frontend/src/containers/mainapp.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="270">
-              <caret line="20" column="0" selection-start-line="20" selection-start-column="0" selection-end-line="20" selection-end-column="0" />
+            <state relative-caret-position="520">
+              <caret line="38" column="75" selection-start-line="38" selection-start-column="75" selection-end-line="38" selection-end-column="75" />
+              <folding>
+                <element signature="e#109#147#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="style.css" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/licenta/licenta/react_frontend/style/css/style.css">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="450">
+              <caret line="30" column="1" selection-start-line="30" selection-start-column="1" selection-end-line="30" selection-end-column="1" />
               <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="index.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/licenta/licenta/react_frontend/node_modules/react-dropzone/dist/index.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="241">
+              <caret line="355" column="10" selection-start-line="355" selection-start-column="10" selection-end-line="355" selection-end-column="10" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="nav.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/licenta/licenta/react_frontend/src/containers/nav.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="150">
+              <caret line="12" column="22" selection-start-line="12" selection-start-column="22" selection-end-line="12" selection-end-column="22" />
+              <folding>
+                <element signature="e#109#147#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -85,23 +110,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="nav.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/licenta/licenta/react_frontend/src/containers/nav.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="568">
-              <caret line="53" column="11" selection-start-line="53" selection-start-column="11" selection-end-line="53" selection-end-column="11" />
-              <folding>
-                <element signature="e#109#147#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="index.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/licenta/licenta/react_frontend/src/actions/index.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="30">
-              <caret line="2" column="28" selection-start-line="2" selection-start-column="28" selection-end-line="2" selection-end-column="28" />
+            <state relative-caret-position="120">
+              <caret line="8" column="38" selection-start-line="8" selection-start-column="38" selection-end-line="8" selection-end-column="38" />
               <folding />
             </state>
           </provider>
@@ -125,16 +138,6 @@
               <folding>
                 <element signature="e#0#42#0" expanded="false" />
               </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="index.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/licenta/licenta/react_frontend/index.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="135">
-              <caret line="9" column="68" selection-start-line="9" selection-start-column="68" selection-end-line="9" selection-end-column="68" />
-              <folding />
             </state>
           </provider>
         </entry>
@@ -163,14 +166,16 @@
         <option value="$PROJECT_DIR$/licenta/licenta/react_frontend/src/index.js" />
         <option value="$PROJECT_DIR$/licenta/licenta/react_frontend/index.html" />
         <option value="$PROJECT_DIR$/licenta/licenta/react_frontend/src/containers/nav.js" />
-        <option value="$PROJECT_DIR$/licenta/licenta/react_frontend/src/actions/index.js" />
         <option value="$PROJECT_DIR$/licenta/licenta/react_frontend/src/reducers/index.js" />
         <option value="$PROJECT_DIR$/licenta/licenta/react_frontend/src/reducers/reducer_current_view.js" />
         <option value="$PROJECT_DIR$/licenta/licenta/react_frontend/src/components/app.js" />
         <option value="$PROJECT_DIR$/licenta/licenta/react_frontend/src/components/search.js" />
         <option value="$PROJECT_DIR$/licenta/licenta/react_frontend/src/components/project.js" />
         <option value="$PROJECT_DIR$/licenta/licenta/react_frontend/src/components/mainapp.js" />
+        <option value="$PROJECT_DIR$/licenta/licenta/react_frontend/src/actions/index.js" />
         <option value="$PROJECT_DIR$/licenta/licenta/react_frontend/src/containers/body.js" />
+        <option value="$PROJECT_DIR$/licenta/licenta/react_frontend/src/containers/mainapp.js" />
+        <option value="$PROJECT_DIR$/licenta/licenta/react_frontend/style/css/style.css" />
       </list>
     </option>
   </component>
@@ -577,11 +582,11 @@
       <recent name="$PROJECT_DIR$/licenta/licenta/react_frontend/built" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/licenta/licenta/react_frontend/src/containers" />
       <recent name="$PROJECT_DIR$/licenta/licenta/react_frontend/style/css" />
       <recent name="$PROJECT_DIR$/licenta/licenta/react_frontend/built/react_frontend" />
       <recent name="$PROJECT_DIR$/licenta/licenta/react_frontend" />
       <recent name="$PROJECT_DIR$/licenta/licenta/react_frontend/react_frontend" />
-      <recent name="$PROJECT_DIR$/licenta/licenta" />
     </key>
   </component>
   <component name="RunManager" selected="Django tests.Test: licenta.react_frontend.src.containers.nav.js">
@@ -1148,49 +1153,13 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/licenta/licenta/react_frontend/src/reducers/index.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="15">
-          <caret line="1" column="44" selection-start-line="1" selection-start-column="44" selection-end-line="1" selection-end-column="44" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/licenta/licenta/react_frontend/src/actions/index.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="30">
-          <caret line="2" column="28" selection-start-line="2" selection-start-column="28" selection-end-line="2" selection-end-column="28" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/licenta/licenta/react_frontend/src/reducers/reducer_current_view.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="30">
-          <caret line="4" column="34" selection-start-line="4" selection-start-column="34" selection-end-line="4" selection-end-column="34" />
-          <folding>
-            <element signature="e#0#42#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/licenta/licenta/react_frontend/src/containers/nav.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="568">
-          <caret line="53" column="11" selection-start-line="53" selection-start-column="11" selection-end-line="53" selection-end-column="11" />
-          <folding>
-            <element signature="e#109#147#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/licenta/licenta/react_frontend/src/components/app.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="135">
           <caret line="9" column="8" selection-start-line="9" selection-start-column="8" selection-end-line="9" selection-end-column="8" />
           <folding>
-            <element signature="n#!!doc" expanded="true" />
-            <element signature="e#85#124#0" expanded="true" />
+            <element signature="n#!!doc" expanded="false" />
+            <element signature="e#85#124#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -1211,22 +1180,76 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/licenta/licenta/react_frontend/src/components/mainapp.js">
+    <entry file="file://$PROJECT_DIR$/licenta/licenta/react_frontend/src/reducers/reducer_current_view.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="270">
-          <caret line="20" column="0" selection-start-line="20" selection-start-column="0" selection-end-line="20" selection-end-column="0" />
+        <state relative-caret-position="30">
+          <caret line="4" column="34" selection-start-line="4" selection-start-column="34" selection-end-line="4" selection-end-column="34" />
+          <folding>
+            <element signature="e#0#42#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/licenta/licenta/react_frontend/src/actions/index.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="120">
+          <caret line="8" column="38" selection-start-line="8" selection-start-column="38" selection-end-line="8" selection-end-column="38" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/licenta/licenta/react_frontend/src/containers/nav.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="150">
+          <caret line="12" column="22" selection-start-line="12" selection-start-column="22" selection-end-line="12" selection-end-column="22" />
+          <folding>
+            <element signature="e#109#147#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/licenta/licenta/react_frontend/src/reducers/index.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="15">
+          <caret line="1" column="44" selection-start-line="1" selection-start-column="44" selection-end-line="1" selection-end-column="44" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/licenta/licenta/react_frontend/src/containers/body.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="495">
-          <caret line="35" column="30" selection-start-line="35" selection-start-column="30" selection-end-line="35" selection-end-column="30" />
+        <state relative-caret-position="145">
+          <caret line="18" column="24" selection-start-line="18" selection-start-column="24" selection-end-line="18" selection-end-column="24" />
           <folding>
             <element signature="e#109#147#0" expanded="true" />
-            <element signature="e#210#254#0" expanded="true" />
+            <element signature="e#225#257#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/licenta/licenta/react_frontend/node_modules/react-dropzone/dist/index.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="241">
+          <caret line="355" column="10" selection-start-line="355" selection-start-column="10" selection-end-line="355" selection-end-column="10" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/licenta/licenta/react_frontend/src/containers/mainapp.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="520">
+          <caret line="38" column="75" selection-start-line="38" selection-start-column="75" selection-end-line="38" selection-end-column="75" />
+          <folding>
+            <element signature="e#109#147#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/licenta/licenta/react_frontend/style/css/style.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="450">
+          <caret line="30" column="1" selection-start-line="30" selection-start-column="1" selection-end-line="30" selection-end-column="1" />
+          <folding />
         </state>
       </provider>
     </entry>
