@@ -1,10 +1,17 @@
-import React from 'react';
-import { Component } from 'react';
+/* React */
+import React, {Component} from 'react';
+
+/* Components */
+import { AppNav } from '../containers/nav';
 
 export default class App extends Component {
-  render() {
-    return (
-      <div>Licenta</div>
-    );
-  }
+    constructor(props) {
+        super(props);
+    }
+
+    render() {
+        return (
+            <AppNav />
+        );
+    }
 }

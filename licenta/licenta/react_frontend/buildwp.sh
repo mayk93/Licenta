@@ -2,15 +2,18 @@
 
 startPath="$(pwd)"
 
-echo startPath
+echo $startPath
 
 webpack
 
-cp bundle.js built/
-cp index.html built/
+cp bundle.js built/react_frontend/
+cp index.html built/react_frontend/
+cp -r style/ built/react_frontend
+
 
 cd ../../
 
-python2 manage.py collectstatic --noinput
 
-cd startPath
+python manage.py collectstatic --noinput
+
+cd $startPath

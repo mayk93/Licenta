@@ -2,24 +2,42 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="eab26bbd-cc6b-42d7-b3f2-ffb590d23125" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/jsLibraryMappings.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/vcs.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/licenta/licenta/react_frontend/.babelrc" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/licenta/licenta/react_frontend/.gitignore" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/licenta/licenta/react_frontend/README.md" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/licenta/licenta/react_frontend/buildwp.sh" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/licenta/licenta/react_frontend/built/index.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/licenta/licenta/react_frontend/index.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/licenta/licenta/react_frontend/package.json" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/licenta/licenta/react_frontend/src/actions/index.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/licenta/licenta/react_frontend/src/components/app.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/licenta/licenta/react_frontend/src/index.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/licenta/licenta/react_frontend/src/reducers/index.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/licenta/licenta/react_frontend/style/style.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/licenta/licenta/react_frontend/test/components/app_test.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/licenta/licenta/react_frontend/test/test_helper.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/licenta/licenta/react_frontend/webpack.config.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/licenta/licenta/views.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/licenta/licenta/react_frontend/style/fonts/glyphicons-halflings-regular.eot" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/licenta/licenta/react_frontend/style/fonts/glyphicons-halflings-regular.ttf" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/licenta/licenta/react_frontend/style/fonts/glyphicons-halflings-regular.woff" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/licenta/licenta/react_frontend/style/fonts/glyphicons-halflings-regular.woff2" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/licenta/licenta/react_frontend/src/containers/nav.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/licenta/licenta/react_frontend/style/css/bootstrap-theme.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/licenta/licenta/react_frontend/style/css/bootstrap-theme.css.map" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/licenta/licenta/react_frontend/style/css/bootstrap-theme.min.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/licenta/licenta/react_frontend/style/css/bootstrap-theme.min.css.map" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/licenta/licenta/react_frontend/style/css/bootstrap.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/licenta/licenta/react_frontend/style/css/bootstrap.css.map" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/licenta/licenta/react_frontend/style/css/bootstrap.min.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/licenta/licenta/react_frontend/style/css/bootstrap.min.css.map" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/licenta/licenta/react_frontend/style/fonts/glyphicons-halflings-regular.svg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/licenta/licenta/react_frontend/style/js/bootstrap.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/licenta/licenta/react_frontend/style/js/bootstrap.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/licenta/licenta/react_frontend/style/js/npm.js" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/licenta/licenta/react_frontend/built/index.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/licenta/licenta/react_frontend/react_frontend/README.md" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/licenta/licenta/react_frontend/react_frontend/buildwp.sh" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/licenta/licenta/react_frontend/react_frontend/package.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/licenta/licenta/react_frontend/react_frontend/src/actions/index.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/licenta/licenta/react_frontend/react_frontend/src/components/app.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/licenta/licenta/react_frontend/react_frontend/src/index.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/licenta/licenta/react_frontend/react_frontend/src/reducers/index.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/licenta/licenta/react_frontend/react_frontend/test/components/app_test.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/licenta/licenta/react_frontend/react_frontend/test/test_helper.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/licenta/licenta/react_frontend/react_frontend/webpack.config.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/licenta/licenta/static/bundle.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/licenta/licenta/static/index.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/licenta/licenta/static/style.css" afterPath="" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/licenta/licenta/react_frontend/index.html" afterPath="$PROJECT_DIR$/licenta/licenta/react_frontend/built/react_frontend/index.html" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/licenta/licenta/react_frontend/style/style.css" afterPath="$PROJECT_DIR$/licenta/licenta/react_frontend/built/empty.txt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/licenta/licenta/settings.py" afterPath="$PROJECT_DIR$/licenta/licenta/settings.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/licenta/licenta/views.py" afterPath="$PROJECT_DIR$/licenta/licenta/views.py" />
     </list>
     <ignored path="Licenta.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -41,32 +59,14 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="settings.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/licenta/licenta/settings.py">
+      <file leaf-file-name="app.js" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/licenta/licenta/react_frontend/src/components/app.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="655">
-              <caret line="126" column="59" selection-start-line="126" selection-start-column="59" selection-end-line="126" selection-end-column="59" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="bundle.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/licenta/licenta/react_frontend/built/bundle.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="__init__.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/licenta/licenta/__init__.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-              <folding />
+            <state relative-caret-position="210">
+              <caret line="14" column="10" selection-start-line="14" selection-start-column="10" selection-end-line="14" selection-end-column="10" />
+              <folding>
+                <element signature="n#!!doc" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -74,28 +74,18 @@
       <file leaf-file-name="index.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/licenta/licenta/react_frontend/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="180">
-              <caret line="12" column="0" selection-start-line="12" selection-start-column="0" selection-end-line="12" selection-end-column="0" />
+            <state relative-caret-position="135">
+              <caret line="9" column="68" selection-start-line="9" selection-start-column="68" selection-end-line="9" selection-end-column="68" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name=".babelrc" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/licenta/licenta/react_frontend/.babelrc">
+      <file leaf-file-name="index.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/licenta/licenta/react_frontend/src/index.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="app.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/licenta/licenta/react_frontend/src/components/app.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="75">
-              <caret line="5" column="12" selection-start-line="5" selection-start-column="12" selection-end-line="5" selection-end-column="12" />
+            <state relative-caret-position="210">
+              <caret line="14" column="40" selection-start-line="14" selection-start-column="40" selection-end-line="14" selection-end-column="40" />
               <folding>
                 <element signature="e#0#26#0" expanded="true" />
               </folding>
@@ -103,33 +93,56 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="urls.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/licenta/licenta/urls.py">
+      <file leaf-file-name="nav.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/licenta/licenta/react_frontend/src/containers/nav.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="420">
-              <caret line="28" column="33" selection-start-line="28" selection-start-column="33" selection-end-line="28" selection-end-column="33" />
+            <state relative-caret-position="105">
+              <caret line="9" column="21" selection-start-line="9" selection-start-column="21" selection-end-line="9" selection-end-column="21" />
               <folding>
-                <element signature="e#640#672#0" expanded="true" />
+                <element signature="e#44#83#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="buildwp.sh" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/licenta/licenta/react_frontend/buildwp.sh">
+      <file leaf-file-name="bootstrap.min.css.map" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/licenta/licenta/react_frontend/style/css/bootstrap.min.css.map">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="225">
-              <caret line="15" column="12" selection-start-line="15" selection-start-column="12" selection-end-line="15" selection-end-column="12" />
+            <state relative-caret-position="0">
+              <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+          <provider editor-type-id="sourcemapFileViewerProvider">
+            <state />
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="bootstrap.min.css" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/licenta/licenta/react_frontend/style/css/bootstrap.min.css">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-5853">
+              <caret line="4" column="72223" selection-start-line="4" selection-start-column="69358" selection-end-line="4" selection-end-column="72223" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="wsgi.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/licenta/licenta/wsgi.py">
+      <file leaf-file-name="bootstrap.css" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/licenta/licenta/react_frontend/style/css/bootstrap.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+            <state relative-caret-position="227">
+              <caret line="4276" column="9" selection-start-line="4276" selection-start-column="1" selection-end-line="4276" selection-end-column="9" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="bootstrap-theme.css" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/licenta/licenta/react_frontend/style/css/bootstrap-theme.css">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-673">
+              <caret line="360" column="11" selection-start-line="360" selection-start-column="1" selection-end-line="360" selection-end-column="11" />
               <folding />
             </state>
           </provider>
@@ -139,10 +152,18 @@
         <entry file="file://$PROJECT_DIR$/licenta/licenta/views.py">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="60">
-              <caret line="4" column="49" selection-start-line="4" selection-start-column="49" selection-end-line="4" selection-end-column="49" />
-              <folding>
-                <marker date="1467478236000" expanded="true" signature="75:129" placeholder="..." />
-              </folding>
+              <caret line="4" column="68" selection-start-line="4" selection-start-column="68" selection-end-line="4" selection-end-column="68" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="buildwp.sh" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/licenta/licenta/react_frontend/buildwp.sh">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="165">
+              <caret line="11" column="0" selection-start-line="11" selection-start-column="0" selection-end-line="11" selection-end-column="0" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -153,6 +174,7 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="Python Script" />
+        <option value="JavaScript File" />
       </list>
     </option>
   </component>
@@ -162,12 +184,15 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/licenta/licenta/static/react_frontend/src/components/app.js" />
-        <option value="$PROJECT_DIR$/licenta/licenta/views.py" />
         <option value="$PROJECT_DIR$/licenta/licenta/urls.py" />
+        <option value="$PROJECT_DIR$/licenta/licenta/views.py" />
+        <option value="$PROJECT_DIR$/licenta/licenta/static/react_frontend/src/components/app.js" />
         <option value="$PROJECT_DIR$/licenta/licenta/settings.py" />
-        <option value="$PROJECT_DIR$/licenta/licenta/react_frontend/index.html" />
         <option value="$PROJECT_DIR$/licenta/licenta/react_frontend/buildwp.sh" />
+        <option value="$PROJECT_DIR$/licenta/licenta/react_frontend/src/index.js" />
+        <option value="$PROJECT_DIR$/licenta/licenta/react_frontend/index.html" />
+        <option value="$PROJECT_DIR$/licenta/licenta/react_frontend/src/containers/nav.js" />
+        <option value="$PROJECT_DIR$/licenta/licenta/react_frontend/src/components/app.js" />
       </list>
     </option>
   </component>
@@ -295,6 +320,58 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
+              <option name="myItemId" value="static" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="react_frontend" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Licenta" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Licenta" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="licenta" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="licenta" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="static" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="css" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Licenta" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Licenta" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="licenta" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="licenta" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
               <option name="myItemId" value="react_frontend" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
@@ -321,7 +398,37 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="built" />
+              <option name="myItemId" value="style" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Licenta" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Licenta" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="licenta" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="licenta" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="react_frontend" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="style" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="css" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -341,14 +448,39 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/licenta/licenta/react_frontend/style" />
+      <recent name="$PROJECT_DIR$/licenta/licenta/static/react_frontend" />
       <recent name="$PROJECT_DIR$/licenta/licenta/react_frontend/built" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/licenta/licenta/react_frontend/style/css" />
+      <recent name="$PROJECT_DIR$/licenta/licenta/react_frontend/built/react_frontend" />
+      <recent name="$PROJECT_DIR$/licenta/licenta/react_frontend" />
+      <recent name="$PROJECT_DIR$/licenta/licenta/react_frontend/react_frontend" />
       <recent name="$PROJECT_DIR$/licenta/licenta" />
-      <recent name="$PROJECT_DIR$/licenta/licenta/static/react_frontend" />
     </key>
   </component>
-  <component name="RunManager" selected="Django server.Licenta">
+  <component name="RunManager" selected="Django tests.Test: licenta.react_frontend.src.containers.nav.js">
+    <configuration default="false" name="Test: licenta.react_frontend.src.containers.nav.js" type="DjangoTestsConfigurationType" factoryName="Django tests" temporary="true">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="Licenta" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
+      <option name="TARGET" value="licenta.react_frontend.src.containers.nav.js" />
+      <option name="SETTINGS_FILE" value="" />
+      <option name="CUSTOM_SETTINGS" value="false" />
+      <option name="USE_OPTIONS" value="false" />
+      <option name="OPTIONS" value="" />
+      <method />
+    </configuration>
     <configuration default="true" type="DjangoTestsConfigurationType" factoryName="Django tests">
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -619,9 +751,15 @@
       <option name="customRunCommand" value="" />
       <method />
     </configuration>
-    <list size="1">
+    <list size="2">
       <item index="0" class="java.lang.String" itemvalue="Django server.Licenta" />
+      <item index="1" class="java.lang.String" itemvalue="Django tests.Test: licenta.react_frontend.src.containers.nav.js" />
     </list>
+    <recent_temporary>
+      <list size="1">
+        <item index="0" class="java.lang.String" itemvalue="Django tests.Test: licenta.react_frontend.src.containers.nav.js" />
+      </list>
+    </recent_temporary>
   </component>
   <component name="ShelveChangesManager" show_recycled="false">
     <option name="remove_strategy" value="false" />
@@ -665,21 +803,21 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="XDebuggerManager">
-    <breakpoint-manager />
+    <breakpoint-manager>
+      <option name="time" value="1" />
+    </breakpoint-manager>
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/licenta/licenta/react_frontend/src/index.js">
+    <entry file="file://$PROJECT_DIR$/licenta/licenta/react_frontend/react_frontend/src/index.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding>
-            <element signature="e#0#26#0" expanded="false" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/licenta/licenta/react_frontend/package.json">
+    <entry file="file://$PROJECT_DIR$/licenta/licenta/react_frontend/react_frontend/package.json">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="345">
           <caret line="23" column="41" selection-start-line="23" selection-start-column="41" selection-end-line="23" selection-end-column="41" />
@@ -711,7 +849,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/licenta/licenta/react_frontend/built/bundle.js">
+    <entry file="file://$PROJECT_DIR$/licenta/licenta/react_frontend/built/react_frontend/bundle.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
@@ -719,45 +857,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/licenta/licenta/views.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="60">
-          <caret line="4" column="49" selection-start-line="4" selection-start-column="49" selection-end-line="4" selection-end-column="49" />
-          <folding>
-            <marker date="1467478236000" expanded="true" signature="75:129" placeholder="..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/licenta/licenta/urls.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="420">
-          <caret line="28" column="33" selection-start-line="28" selection-start-column="33" selection-end-line="28" selection-end-column="33" />
-          <folding>
-            <element signature="e#640#672#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/licenta/licenta/settings.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="655">
-          <caret line="126" column="59" selection-start-line="126" selection-start-column="59" selection-end-line="126" selection-end-column="59" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/licenta/licenta/react_frontend/src/components/app.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="75">
-          <caret line="5" column="12" selection-start-line="5" selection-start-column="12" selection-end-line="5" selection-end-column="12" />
-          <folding>
-            <element signature="e#0#26#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/licenta/licenta/react_frontend/index.html">
+    <entry file="file://$PROJECT_DIR$/licenta/licenta/react_frontend/built/react_frontend/index.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="180">
           <caret line="12" column="0" selection-start-line="12" selection-start-column="0" selection-end-line="12" selection-end-column="0" />
@@ -765,11 +865,182 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/licenta/licenta/react_frontend/buildwp.sh">
+    <entry file="file://$PROJECT_DIR$/licenta/licenta/react_frontend/react_frontend/buildwp.sh">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="225">
           <caret line="15" column="12" selection-start-line="15" selection-start-column="12" selection-end-line="15" selection-end-column="12" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/licenta/licenta/react_frontend/react_frontend/src/components/app.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="90">
+          <caret line="6" column="24" selection-start-line="6" selection-start-column="24" selection-end-line="6" selection-end-column="24" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/licenta/licenta/static/react_frontend/src/components/app.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="150">
+          <caret line="10" column="0" selection-start-line="10" selection-start-column="0" selection-end-line="10" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/licenta/licenta/static/react_frontend/.babelrc">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/licenta/licenta/react_frontend/built/empty.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/licenta/licenta/react_frontend/node_modules/react-navbar/build/src/Navbar.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="225">
+          <caret line="15" column="0" selection-start-line="15" selection-start-column="0" selection-end-line="15" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/licenta/licenta/react_frontend/node_modules/react-navbar/build/index.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="120">
+          <caret line="8" column="34" selection-start-line="8" selection-start-column="34" selection-end-line="8" selection-end-column="34" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/licenta/licenta/urls.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="420">
+          <caret line="28" column="44" selection-start-line="28" selection-start-column="44" selection-end-line="28" selection-end-column="44" />
+          <folding>
+            <element signature="e#640#672#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/licenta/licenta/react_frontend/node_modules/react-bootstrap/lib/index.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="30">
+          <caret line="2" column="73" selection-start-line="2" selection-start-column="73" selection-end-line="2" selection-end-column="73" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/licenta/licenta/react_frontend/node_modules/react-bootstrap/node_modules/babel-runtime/helpers/interop-require-default.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/licenta/licenta/settings.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="180">
+          <caret line="12" column="9" selection-start-line="12" selection-start-column="9" selection-end-line="12" selection-end-column="9" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/licenta/licenta/react_frontend/src/index.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="210">
+          <caret line="14" column="40" selection-start-line="14" selection-start-column="40" selection-end-line="14" selection-end-column="40" />
+          <folding>
+            <element signature="e#0#26#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/licenta/licenta/react_frontend/buildwp.sh">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="165">
+          <caret line="11" column="0" selection-start-line="11" selection-start-column="0" selection-end-line="11" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/licenta/licenta/views.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="60">
+          <caret line="4" column="68" selection-start-line="4" selection-start-column="68" selection-end-line="4" selection-end-column="68" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/licenta/licenta/react_frontend/style/css/bootstrap.min.css.map">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+      <provider editor-type-id="sourcemapFileViewerProvider">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/licenta/licenta/react_frontend/style/css/bootstrap.min.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-5853">
+          <caret line="4" column="72223" selection-start-line="4" selection-start-column="69358" selection-end-line="4" selection-end-column="72223" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/licenta/licenta/react_frontend/style/css/bootstrap.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="227">
+          <caret line="4276" column="9" selection-start-line="4276" selection-start-column="1" selection-end-line="4276" selection-end-column="9" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/licenta/licenta/react_frontend/style/css/bootstrap-theme.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-673">
+          <caret line="360" column="11" selection-start-line="360" selection-start-column="1" selection-end-line="360" selection-end-column="11" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/licenta/licenta/react_frontend/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="135">
+          <caret line="9" column="68" selection-start-line="9" selection-start-column="68" selection-end-line="9" selection-end-column="68" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/licenta/licenta/react_frontend/src/containers/nav.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="105">
+          <caret line="9" column="21" selection-start-line="9" selection-start-column="21" selection-end-line="9" selection-end-column="21" />
+          <folding>
+            <element signature="e#44#83#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/licenta/licenta/react_frontend/src/components/app.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="210">
+          <caret line="14" column="10" selection-start-line="14" selection-start-column="10" selection-end-line="14" selection-end-column="10" />
+          <folding>
+            <element signature="n#!!doc" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
