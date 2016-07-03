@@ -9,6 +9,11 @@ import React, {Component} from 'react';
 import { connect } from 'react-redux';
 import { bindActionCreators } from 'redux';
 
+/* Components */
+import MainApp from '../components/mainapp';
+import SearchApp from '../components/search';
+import Project from '../components/project';
+
 class AppBody extends Component {
     constructor(props) {
         super(props);
@@ -17,16 +22,18 @@ class AppBody extends Component {
     render() {
         if (this.props.current_view == "main_app") {
             return (
-                <div>
-                    Main App hardcoded
-                </div>
+                <MainApp />
+            );
+        } else if(this.props.current_view == "search") {
+            return (
+                <SearchApp />
+            );
+        } else if(this.props.current_view == "project") {
+            return (
+                <Project />
             );
         } else {
-            return (
-                <div>
-                    { this.props.current_view }
-                </div>
-            );
+            return <MainApp />
         }
 
     }
