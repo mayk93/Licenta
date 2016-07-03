@@ -41005,8 +41005,6 @@
 
 	var _reactDropzone2 = _interopRequireDefault(_reactDropzone);
 
-	var _reactBootstrap = __webpack_require__(189);
-
 	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 	function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
@@ -41038,65 +41036,89 @@
 	        var _this = _possibleConstructorReturn(this, Object.getPrototypeOf(MainApp).call(this, props));
 
 	        _this.state = {
-	            files: []
+	            dropzone_available: true,
+	            dropped_item: null,
+	            preview: ""
 	        };
+
+	        _this.onDrop = _this.onDrop.bind(_this);
 	        return _this;
 	    }
 
 	    _createClass(MainApp, [{
-	        key: 'onDrop',
-	        value: function onDrop(files) {
+	        key: 'dropzone_box',
+	        value: function dropzone_box() {
 	            var _this2 = this;
+
+	            return _react2.default.createElement(
+	                _reactDropzone2.default,
+	                { className: 'dropbox_style',
+	                    activeClassName: 'dropbox_style_active',
+	                    ref: 'dropzone',
+	                    onDrop: function onDrop(files) {
+	                        _this2.onDrop(files);
+	                    } },
+	                _react2.default.createElement(
+	                    'div',
+	                    { style: { "text-align": "center", "margin-top": "150px" } },
+	                    'Analizeaza o imagine.'
+	                )
+	            );
+	        }
+	    }, {
+	        key: 'dropped_display',
+	        value: function dropped_display(source) {
+	            return _react2.default.createElement(
+	                'div',
+	                { className: 'dropbox_style' },
+	                _react2.default.createElement('img', { src: source,
+	                    style: { 'width': '290px', 'height': '290px' } })
+	            );
+	        }
+	    }, {
+	        key: 'componentWillUpdate',
+	        value: function componentWillUpdate(nextProps, nextState) {
+	            console.log("Will update np: ", nextProps);
+	            console.log("Will update np: ", nextState);
+	        }
+	    }, {
+	        key: 'onDrop',
+	        value: function onDrop(dropped_item) {
+	            var _this3 = this;
 
 	            console.log("onDrop called. Current state: ", this.state);
 	            this.setState({
-	                files: files
+	                dropzone_available: false,
+	                dropped_item: dropped_item[0],
+	                preview: dropped_item[0].preview
 	            }, function () {
-	                console.log("onDrop callback. Current state: ", _this2.state);
+	                console.log("onDrop callback. Current state: ", _this3.state);
+	                console.log("This is dropped display: ", _this3.dropped_display);
 	            });
 	        }
 	    }, {
 	        key: 'render',
 	        value: function render() {
+	            var _this4 = this;
+
+	            console.log("Rendering with state: ", this.state);
 	            return _react2.default.createElement(
 	                'div',
 	                { className: 'jumbotron' },
-	                _react2.default.createElement(
-	                    _reactDropzone2.default,
-	                    { className: 'dropbox_style',
-	                        activeClassName: 'dropbox_style_active',
-	                        ref: 'dropzone',
-	                        onDrop: this.onDrop },
-	                    _react2.default.createElement(
-	                        'div',
-	                        { style: { "text-align": "center", "margin-top": "150px" } },
-	                        'Analizeaza o imagine.'
-	                    )
-	                ),
-	                this.state.files.length > 0 ? _react2.default.createElement(
-	                    'div',
-	                    null,
-	                    _react2.default.createElement(
-	                        'h2',
-	                        null,
-	                        'Uploading ',
-	                        this.state.files.length,
-	                        ' files...'
-	                    ),
-	                    _react2.default.createElement(
-	                        'div',
-	                        null,
-	                        this.state.files.map(function (file) {
-	                            return _react2.default.createElement('img', { src: file.preview });
-	                        })
-	                    )
-	                ) : null,
+	                this.state.dropzone_available ? this.dropzone_box() : this.dropped_display(this.state.preview),
 	                _react2.default.createElement(
 	                    'div',
 	                    { className: 'center_button' },
 	                    _react2.default.createElement(
 	                        'button',
-	                        { bsStyle: '', className: 'buttonStyle' },
+	                        { className: 'buttonStyle',
+	                            onClick: function onClick() {
+	                                _this4.setState({
+	                                    dropzone_available: true,
+	                                    dropped_item: null,
+	                                    preview: ""
+	                                });
+	                            } },
 	                        'Incearca o alta imagine'
 	                    )
 	                )

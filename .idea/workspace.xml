@@ -5,7 +5,6 @@
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/licenta/licenta/react_frontend/built/react_frontend/css/style.css" afterPath="$PROJECT_DIR$/licenta/licenta/react_frontend/built/react_frontend/css/style.css" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/licenta/licenta/react_frontend/src/containers/mainapp.js" afterPath="$PROJECT_DIR$/licenta/licenta/react_frontend/src/containers/mainapp.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/licenta/licenta/react_frontend/src/containers/nav.js" afterPath="$PROJECT_DIR$/licenta/licenta/react_frontend/src/containers/nav.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/licenta/licenta/react_frontend/style/css/style.css" afterPath="$PROJECT_DIR$/licenta/licenta/react_frontend/style/css/style.css" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/licenta/licenta/static/css/style.css" afterPath="$PROJECT_DIR$/licenta/licenta/static/css/style.css" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/licenta/licenta/static/react_frontend/bundle.js" afterPath="$PROJECT_DIR$/licenta/licenta/static/react_frontend/bundle.js" />
@@ -44,15 +43,34 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="mainapp.js" pinned="false" current-in-tab="false">
+      <file leaf-file-name="mainapp.js" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/licenta/licenta/react_frontend/src/containers/mainapp.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="570">
-              <caret line="59" column="54" selection-start-line="59" selection-start-column="54" selection-end-line="59" selection-end-column="54" />
+            <state relative-caret-position="340">
+              <caret line="82" column="54" selection-start-line="82" selection-start-column="54" selection-end-line="82" selection-end-column="54" />
               <folding>
                 <element signature="e#109#147#0" expanded="true" />
-                <element signature="e#270#308#0" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="react.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/licenta/licenta/react_frontend/node_modules/react/react.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="30">
+              <caret line="2" column="34" selection-start-line="2" selection-start-column="34" selection-end-line="2" selection-end-column="34" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="React.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/licenta/licenta/react_frontend/node_modules/react/lib/React.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="360">
+              <caret line="24" column="0" selection-start-line="24" selection-start-column="0" selection-end-line="24" selection-end-column="0" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -67,11 +85,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="style.css" pinned="false" current-in-tab="true">
+      <file leaf-file-name="style.css" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/licenta/licenta/react_frontend/style/css/style.css">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="150">
-              <caret line="10" column="4" selection-start-line="10" selection-start-column="4" selection-end-line="10" selection-end-column="4" />
+              <caret line="10" column="0" selection-start-line="10" selection-start-column="0" selection-end-line="10" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -90,7 +108,7 @@
       <file leaf-file-name="nav.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/licenta/licenta/react_frontend/src/containers/nav.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="150">
+            <state relative-caret-position="58">
               <caret line="28" column="26" selection-start-line="28" selection-start-column="26" selection-end-line="28" selection-end-column="26" />
               <folding>
                 <element signature="e#109#147#0" expanded="true" />
@@ -140,9 +158,9 @@
         <option value="$PROJECT_DIR$/licenta/licenta/react_frontend/src/components/mainapp.js" />
         <option value="$PROJECT_DIR$/licenta/licenta/react_frontend/src/actions/index.js" />
         <option value="$PROJECT_DIR$/licenta/licenta/react_frontend/src/containers/body.js" />
-        <option value="$PROJECT_DIR$/licenta/licenta/react_frontend/src/containers/mainapp.js" />
         <option value="$PROJECT_DIR$/licenta/licenta/react_frontend/src/containers/nav.js" />
         <option value="$PROJECT_DIR$/licenta/licenta/react_frontend/style/css/style.css" />
+        <option value="$PROJECT_DIR$/licenta/licenta/react_frontend/src/containers/mainapp.js" />
       </list>
     </option>
   </component>
@@ -1298,20 +1316,25 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/licenta/licenta/react_frontend/src/containers/mainapp.js">
+    <entry file="file://$PROJECT_DIR$/licenta/licenta/react_frontend/node_modules/react/lib/React.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="570">
-          <caret line="59" column="54" selection-start-line="59" selection-start-column="54" selection-end-line="59" selection-end-column="54" />
-          <folding>
-            <element signature="e#109#147#0" expanded="true" />
-            <element signature="e#270#308#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="360">
+          <caret line="24" column="0" selection-start-line="24" selection-start-column="0" selection-end-line="24" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/licenta/licenta/react_frontend/node_modules/react/react.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="30">
+          <caret line="2" column="34" selection-start-line="2" selection-start-column="34" selection-end-line="2" selection-end-column="34" />
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/licenta/licenta/react_frontend/src/containers/nav.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="150">
+        <state relative-caret-position="58">
           <caret line="28" column="26" selection-start-line="28" selection-start-column="26" selection-end-line="28" selection-end-column="26" />
           <folding>
             <element signature="e#109#147#0" expanded="true" />
@@ -1322,8 +1345,18 @@
     <entry file="file://$PROJECT_DIR$/licenta/licenta/react_frontend/style/css/style.css">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="150">
-          <caret line="10" column="4" selection-start-line="10" selection-start-column="4" selection-end-line="10" selection-end-column="4" />
+          <caret line="10" column="0" selection-start-line="10" selection-start-column="0" selection-end-line="10" selection-end-column="0" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/licenta/licenta/react_frontend/src/containers/mainapp.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="340">
+          <caret line="82" column="54" selection-start-line="82" selection-start-column="54" selection-end-line="82" selection-end-column="54" />
+          <folding>
+            <element signature="e#109#147#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

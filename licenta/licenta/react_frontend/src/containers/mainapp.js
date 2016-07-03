@@ -14,54 +14,81 @@ import { process_image } from '../actions/index';
 
 /* Other */
 import Dropzone from 'react-dropzone';
-import { Button } from 'react-bootstrap';
 
 class MainApp extends Component {
     constructor(props) {
         super(props);
 
         this.state = {
-            files: []
-        }
+            dropzone_available: true,
+            dropped_item: null,
+            preview: ""
+        };
+
+        this.onDrop = this.onDrop.bind(this);
     }
 
-    onDrop(files) {
+    dropzone_box() {
+        return (
+            <Dropzone className="dropbox_style"
+                      activeClassName="dropbox_style_active"
+                      ref="dropzone"
+                      onDrop={(files) => {this.onDrop(files)}}>
+                <div style={{"text-align": "center", "margin-top": "150px"}}>
+                    Analizeaza o imagine.
+                </div>
+            </Dropzone>
+        );
+    }
+
+    dropped_display(source) {
+        return (
+            <div className="dropbox_style">
+                <img src={ source }
+                     style={{'width': '290px', 'height': '290px'}}/>
+            </div>
+        );
+    }
+
+    componentWillUpdate(nextProps, nextState) {
+        console.log("Will update np: ", nextProps);
+        console.log("Will update np: ", nextState);
+    }
+
+    onDrop(dropped_item) {
         console.log("onDrop called. Current state: ", this.state);
         this.setState({
-            files: files
+            dropzone_available: false,
+            dropped_item: dropped_item[0],
+            preview: dropped_item[0].preview
       }, () => {
             console.log("onDrop callback. Current state: ", this.state);
+            console.log("This is dropped display: ", this.dropped_display);
         });
+
     }
 
     render() {
+        console.log("Rendering with state: ", this.state);
         return (
             <div className="jumbotron">
-                <Dropzone className="dropbox_style"
-                          activeClassName="dropbox_style_active"
-                          ref="dropzone"
-                          onDrop={this.onDrop}>
-                    <div style={{"text-align": "center", "margin-top": "150px"}}>
-                        Analizeaza o imagine.
-                    </div>
-                </Dropzone>
-                {
-                    this.state.files.length > 0 ?
-                    <div>
-                        <h2>Uploading {this.state.files.length} files...</h2>
-                        <div>
-                        {this.state.files.map((file) => <img src={file.preview} /> )}
-                        </div>
-                    </div>
-                    :
-                    null
-                }
+
+                {this.state.dropzone_available ? this.dropzone_box() : this.dropped_display(this.state.preview)}
+
                 <div className="center_button">
-                    <button bsStyle="" className="buttonStyle">
+                    <button className="buttonStyle"
+                            onClick={() => {
+                                this.setState({
+                                    dropzone_available: true,
+                                    dropped_item: null,
+                                    preview: ""
+                                })
+                            }}>
                         Incearca o alta imagine
                     </button>
                 </div>
             </div>
+
         );
     }
 }
