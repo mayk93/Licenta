@@ -6,6 +6,9 @@
     border-style: solid;
     border-radius: 7px;
     margin-left: 40vw;
+
+    background-color: white;
+    
 }
 
 .dropbox_style_active {
@@ -17,21 +20,56 @@
     border-radius: 7px;
     margin-left: 40vw;
 
-    background-color: beige;
+    background-color: wheat;
+}
+
+.center_button {
+    margin-top: 10px;
+    margin-left: 40vw;
+}
+
+.buttonStyle{
+    width: 300px;
+    background-color: #333;
+    border-color: #101010;
+    border-radius: 3px
+;
+    color: wheat;
+}
+
+.buttonStyle:hover {
+    color: white;
+
+}
+
+.menuItems {
+    color: wheat;
+}
+
+.menuItems:hover {
+    color: white;
 }
 
 .dropbox_style:hover {
-    background-color: beige;
+    background-color: wheat;
 }
 
 @media (max-width: 900px) {
     .dropbox_style {
         margin-left: 30vw;
     }
+
+    .center_button {
+        margin-left: 30vw;
+    }
 }
 
 @media (max-width: 600px) {
     .dropbox_style {
+        margin-left: 20vw;
+    }
+
+    .center_button {
         margin-left: 20vw;
     }
 }

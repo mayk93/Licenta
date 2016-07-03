@@ -21559,7 +21559,7 @@
 	                        null,
 	                        _react2.default.createElement(
 	                            'a',
-	                            { href: '#' },
+	                            { style: { 'color': 'wheat', 'cursor': 'default' + '' }, href: '#' },
 	                            'Licenta'
 	                        )
 	                    ),
@@ -21573,17 +21573,27 @@
 	                        null,
 	                        _react2.default.createElement(
 	                            _reactBootstrap.NavItem,
-	                            { href: '#', onClick: function onClick() {
+	                            { href: '#',
+	                                onClick: function onClick() {
 	                                    _this2.props.change_current_view("main_app");
 	                                } },
-	                            'Aplicatia principala'
+	                            _react2.default.createElement(
+	                                'p',
+	                                { className: 'menuItems' },
+	                                'Aplicatia principala'
+	                            )
 	                        ),
 	                        _react2.default.createElement(
 	                            _reactBootstrap.NavItem,
-	                            { href: '#', onClick: function onClick() {
+	                            { href: '#',
+	                                onClick: function onClick() {
 	                                    _this2.props.change_current_view("search");
 	                                } },
-	                            'Cautare imagini'
+	                            _react2.default.createElement(
+	                                'p',
+	                                { className: 'menuItems' },
+	                                'Cautare imagini'
+	                            )
 	                        )
 	                    ),
 	                    _react2.default.createElement(
@@ -21591,10 +21601,15 @@
 	                        { pullRight: true },
 	                        _react2.default.createElement(
 	                            _reactBootstrap.NavItem,
-	                            { href: '#', onClick: function onClick() {
+	                            { href: '#',
+	                                onClick: function onClick() {
 	                                    _this2.props.change_current_view("project");
 	                                } },
-	                            'Lucrarea scrisa'
+	                            _react2.default.createElement(
+	                                'p',
+	                                { className: 'menuItems' },
+	                                'Lucrarea scrisa'
+	                            )
 	                        )
 	                    )
 	                )
@@ -40990,6 +41005,8 @@
 
 	var _reactDropzone2 = _interopRequireDefault(_reactDropzone);
 
+	var _reactBootstrap = __webpack_require__(189);
+
 	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 	function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
@@ -41046,11 +41063,14 @@
 	                { className: 'jumbotron' },
 	                _react2.default.createElement(
 	                    _reactDropzone2.default,
-	                    { className: 'dropbox_style', activeClassName: 'dropbox_style_active', ref: 'dropzone', onDrop: this.onDrop },
+	                    { className: 'dropbox_style',
+	                        activeClassName: 'dropbox_style_active',
+	                        ref: 'dropzone',
+	                        onDrop: this.onDrop },
 	                    _react2.default.createElement(
 	                        'div',
-	                        null,
-	                        'Try dropping some files here, or click to select files to upload.'
+	                        { style: { "text-align": "center", "margin-top": "150px" } },
+	                        'Analizeaza o imagine.'
 	                    )
 	                ),
 	                this.state.files.length > 0 ? _react2.default.createElement(
@@ -41070,7 +41090,16 @@
 	                            return _react2.default.createElement('img', { src: file.preview });
 	                        })
 	                    )
-	                ) : null
+	                ) : null,
+	                _react2.default.createElement(
+	                    'div',
+	                    { className: 'center_button' },
+	                    _react2.default.createElement(
+	                        'button',
+	                        { bsStyle: '', className: 'buttonStyle' },
+	                        'Incearca o alta imagine'
+	                    )
+	                )
 	            );
 	        }
 	    }]);

@@ -13,7 +13,7 @@ import { bindActionCreators } from 'redux';
 import { change_current_view } from '../actions/index';
 
 /* Other */
-import {Navbar, Nav, NavItem } from 'react-bootstrap';
+import { Navbar, Nav, NavItem } from 'react-bootstrap';
 
 class AppNav extends Component {
     constructor(props) {
@@ -25,23 +25,28 @@ class AppNav extends Component {
             <Navbar inverse>
                 <Navbar.Header>
                     <Navbar.Brand>
-                        <a href="#">Licenta</a>
+                        <a style={{'color': 'wheat', 'cursor': 'default' +
+                         ''}} href="#">Licenta</a>
                     </Navbar.Brand>
                     <Navbar.Toggle />
                 </Navbar.Header>
                 <Navbar.Collapse>
                     <Nav>
-                        <NavItem href="#" onClick={ () => {this.props.change_current_view("main_app")} }>
-                            Aplicatia principala
+                        <NavItem href="#"
+                                 onClick={ () => {this.props.change_current_view("main_app")} }>
+                            <p className="menuItems">Aplicatia principala</p>
                         </NavItem>
-                        <NavItem href="#" onClick={ () => {this.props.change_current_view("search")} }>
-                            Cautare imagini
+                        <NavItem href="#"
+                                 onClick={ () => {this.props.change_current_view("search")} }>
+                            <p className="menuItems">Cautare imagini</p>
                         </NavItem>
                     </Nav>
                     <Nav pullRight>
-                        <NavItem href="#" onClick={ () => {this.props.change_current_view("project")} }>
-                            Lucrarea scrisa
+                        <NavItem href="#"
+                                 onClick={ () => {this.props.change_current_view("project")} }>
+                            <p className="menuItems">Lucrarea scrisa</p>
                         </NavItem>
+
                     </Nav>
                 </Navbar.Collapse>
             </Navbar>
