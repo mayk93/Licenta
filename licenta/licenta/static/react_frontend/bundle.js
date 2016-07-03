@@ -41106,7 +41106,7 @@
 	                'div',
 	                { className: 'jumbotron' },
 	                this.state.dropzone_available ? this.dropzone_box() : this.dropped_display(this.state.preview),
-	                _react2.default.createElement(
+	                !this.state.dropzone_available ? _react2.default.createElement(
 	                    'div',
 	                    { className: 'center_button' },
 	                    _react2.default.createElement(
@@ -41121,7 +41121,7 @@
 	                            } },
 	                        'Incearca o alta imagine'
 	                    )
-	                )
+	                ) : _react2.default.createElement('div', null)
 	            );
 	        }
 	    }]);

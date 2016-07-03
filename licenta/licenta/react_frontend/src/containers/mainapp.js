@@ -75,6 +75,7 @@ class MainApp extends Component {
 
                 {this.state.dropzone_available ? this.dropzone_box() : this.dropped_display(this.state.preview)}
 
+                {!this.state.dropzone_available ?
                 <div className="center_button">
                     <button className="buttonStyle"
                             onClick={() => {
@@ -86,7 +87,7 @@ class MainApp extends Component {
                             }}>
                         Incearca o alta imagine
                     </button>
-                </div>
+                </div> : <div></div>}
             </div>
 
         );

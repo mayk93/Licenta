@@ -3,12 +3,8 @@
   <component name="ChangeListManager">
     <list default="true" id="eab26bbd-cc6b-42d7-b3f2-ffb590d23125" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/licenta/licenta/react_frontend/built/react_frontend/css/style.css" afterPath="$PROJECT_DIR$/licenta/licenta/react_frontend/built/react_frontend/css/style.css" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/licenta/licenta/react_frontend/src/containers/mainapp.js" afterPath="$PROJECT_DIR$/licenta/licenta/react_frontend/src/containers/mainapp.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/licenta/licenta/react_frontend/style/css/style.css" afterPath="$PROJECT_DIR$/licenta/licenta/react_frontend/style/css/style.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/licenta/licenta/static/css/style.css" afterPath="$PROJECT_DIR$/licenta/licenta/static/css/style.css" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/licenta/licenta/static/react_frontend/bundle.js" afterPath="$PROJECT_DIR$/licenta/licenta/static/react_frontend/bundle.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/licenta/licenta/static/react_frontend/css/style.css" afterPath="$PROJECT_DIR$/licenta/licenta/static/react_frontend/css/style.css" />
     </list>
     <ignored path="Licenta.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -46,8 +42,8 @@
       <file leaf-file-name="mainapp.js" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/licenta/licenta/react_frontend/src/containers/mainapp.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="340">
-              <caret line="82" column="54" selection-start-line="82" selection-start-column="54" selection-end-line="82" selection-end-column="54" />
+            <state relative-caret-position="460">
+              <caret line="77" column="18" selection-start-line="77" selection-start-column="18" selection-end-line="77" selection-end-column="18" />
               <folding>
                 <element signature="e#109#147#0" expanded="true" />
               </folding>
@@ -1352,8 +1348,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/licenta/licenta/react_frontend/src/containers/mainapp.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="340">
-          <caret line="82" column="54" selection-start-line="82" selection-start-column="54" selection-end-line="82" selection-end-column="54" />
+        <state relative-caret-position="460">
+          <caret line="77" column="18" selection-start-line="77" selection-start-column="18" selection-end-line="77" selection-end-column="18" />
           <folding>
             <element signature="e#109#147#0" expanded="true" />
           </folding>
