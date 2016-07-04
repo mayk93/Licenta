@@ -64,6 +64,7 @@ class MainApp extends Component {
       }, () => {
             console.log("onDrop callback. Current state: ", this.state);
             console.log("This is dropped display: ", this.dropped_display);
+            this.props.process_image(dropped_item[0]);
         });
 
     }

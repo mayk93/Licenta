@@ -22,7 +22,8 @@ import views
 
 urlpatterns = [
     url(r'^admin/', admin.site.urls),
-    url(r'^', views.react_frontend),
+    url(r'^process_image/', views.process_image),
+    # url(r'^', views.react_frontend),
 ]
 
 if settings.DEBUG == True:
