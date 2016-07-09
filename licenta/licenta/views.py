@@ -19,7 +19,7 @@ def process_image(request):
         return JsonResponse({"error": unicode(e)})
     image = request.FILES[key]
     image_manager = lc_helpers.FileManager(image)
-    path = image_manager.write_chunked_filed()
+    path = image_manager.temp_path
     result = lc_logic.process(path)
     del image_manager
     return JsonResponse(result)

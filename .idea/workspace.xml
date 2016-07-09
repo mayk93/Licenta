@@ -2,9 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="eab26bbd-cc6b-42d7-b3f2-ffb590d23125" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/licenta/licenta/react_frontend/src/index.js" afterPath="$PROJECT_DIR$/licenta/licenta/react_frontend/src/index.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/licenta/licenta/static/react_frontend/bundle.js" afterPath="$PROJECT_DIR$/licenta/licenta/static/react_frontend/bundle.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/licenta/licenta/lc_helpers.py" afterPath="$PROJECT_DIR$/licenta/licenta/lc_helpers.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/licenta/licenta/views.py" afterPath="$PROJECT_DIR$/licenta/licenta/views.py" />
     </list>
     <ignored path="Licenta.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -19,6 +18,8 @@
   <component name="ChangesViewManager" flattened_view="true" show_ignored="false" />
   <component name="CoverageDataManager">
     <SUITE FILE_PATH="coverage/Licenta$lc_helpers.coverage" NAME="lc_helpers Coverage Results" MODIFIED="1468095921802" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/licenta/licenta" />
+    <SUITE FILE_PATH="coverage/Licenta$Unittests_in_TestHelpers.coverage" NAME="Unittests in TestHelpers Coverage Results" MODIFIED="1468101504466" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/licenta/licenta" />
+    <SUITE FILE_PATH="coverage/Licenta$Unittest_TestHelpers_test_extension_from_type.coverage" NAME="Unittest TestHelpers.test_extension_from_type Coverage Results" MODIFIED="1468097410521" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/licenta/licenta" />
     <SUITE FILE_PATH="coverage/Licenta$Test__licenta_react_frontend_src_containers_mainapp_js.coverage" NAME="Test: licenta.react_frontend.src.containers.mainapp.js Coverage Results" MODIFIED="1468093164174" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="" />
   </component>
   <component name="CreatePatchCommitExecutor">
@@ -55,8 +56,8 @@
       <file leaf-file-name="views.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/licenta/licenta/views.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="225">
-              <caret line="15" column="0" selection-start-line="15" selection-start-column="0" selection-end-line="15" selection-end-column="0" />
+            <state relative-caret-position="315">
+              <caret line="21" column="34" selection-start-line="21" selection-start-column="34" selection-end-line="21" selection-end-column="34" />
               <folding>
                 <element signature="e#0#36#0" expanded="true" />
               </folding>
@@ -86,11 +87,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="lc_helpers.py" pinned="false" current-in-tab="false">
+      <file leaf-file-name="lc_helpers.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/licenta/licenta/lc_helpers.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="105">
-              <caret line="7" column="20" selection-start-line="7" selection-start-column="20" selection-end-line="7" selection-end-column="20" />
+            <state relative-caret-position="-245">
+              <caret line="39" column="78" selection-start-line="39" selection-start-column="78" selection-end-line="39" selection-end-column="78" />
               <folding>
                 <element signature="e#7#16#0" expanded="true" />
               </folding>
@@ -98,7 +99,17 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="index.js" pinned="false" current-in-tab="true">
+      <file leaf-file-name="magic.py" pinned="false" current-in-tab="false">
+        <entry file="file:///Library/Python/2.7/site-packages/magic.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="248">
+              <caret line="172" column="0" selection-start-line="172" selection-start-column="0" selection-end-line="172" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="index.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/licenta/licenta/react_frontend/src/index.js">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="150">
@@ -127,16 +138,6 @@
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="300">
               <caret line="25" column="27" selection-start-line="25" selection-start-column="27" selection-end-line="25" selection-end-column="27" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="wsgi.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/licenta/licenta/wsgi.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -177,10 +178,10 @@
         <option value="$PROJECT_DIR$/licenta/licenta/react_frontend/lc_helpers.py" />
         <option value="$PROJECT_DIR$/licenta/licenta/react_frontend/lc_logic.py" />
         <option value="$PROJECT_DIR$/licenta/licenta/lc_logic.py" />
-        <option value="$PROJECT_DIR$/licenta/licenta/views.py" />
-        <option value="$PROJECT_DIR$/licenta/licenta/lc_helpers.py" />
         <option value="$PROJECT_DIR$/licenta/licenta/react_frontend/src/actions/index.js" />
         <option value="$PROJECT_DIR$/licenta/licenta/react_frontend/src/index.js" />
+        <option value="$PROJECT_DIR$/licenta/licenta/views.py" />
+        <option value="$PROJECT_DIR$/licenta/licenta/lc_helpers.py" />
       </list>
     </option>
   </component>
@@ -404,7 +405,7 @@
       <recent name="$PROJECT_DIR$/licenta/licenta/react_frontend/built" />
     </key>
   </component>
-  <component name="RunManager" selected="Django server.Licenta">
+  <component name="RunManager" selected="Python tests.Unittests in TestHelpers">
     <configuration default="false" name="Test: licenta.react_frontend.src.containers.nav.js" type="DjangoTestsConfigurationType" factoryName="Django tests" temporary="true">
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -461,6 +462,52 @@
       <option name="SCRIPT_NAME" value="$PROJECT_DIR$/licenta/licenta/lc_helpers.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
+      <method />
+    </configuration>
+    <configuration default="false" name="Unittest TestHelpers.test_extension_from_type" type="tests" factoryName="Unittests" temporary="true" nameIsGenerated="true">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/licenta/licenta" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="Licenta" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/licenta/licenta/lc_helpers.py" />
+      <option name="CLASS_NAME" value="TestHelpers" />
+      <option name="METHOD_NAME" value="test_extension_from_type" />
+      <option name="FOLDER_NAME" value="" />
+      <option name="TEST_TYPE" value="TEST_METHOD" />
+      <option name="PATTERN" value="" />
+      <option name="USE_PATTERN" value="false" />
+      <option name="PUREUNITTEST" value="true" />
+      <option name="PARAMS" value="" />
+      <option name="USE_PARAM" value="false" />
+      <method />
+    </configuration>
+    <configuration default="false" name="Unittests in TestHelpers" type="tests" factoryName="Unittests" temporary="true" nameIsGenerated="true">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/licenta/licenta" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="Licenta" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/licenta/licenta/lc_helpers.py" />
+      <option name="CLASS_NAME" value="TestHelpers" />
+      <option name="METHOD_NAME" value="" />
+      <option name="FOLDER_NAME" value="" />
+      <option name="TEST_TYPE" value="TEST_CLASS" />
+      <option name="PATTERN" value="" />
+      <option name="USE_PATTERN" value="false" />
+      <option name="PUREUNITTEST" value="true" />
+      <option name="PARAMS" value="" />
+      <option name="USE_PARAM" value="false" />
       <method />
     </configuration>
     <configuration default="true" type="BashConfigurationType" factoryName="Bash">
@@ -750,17 +797,21 @@
       <option name="customRunCommand" value="" />
       <method />
     </configuration>
-    <list size="4">
+    <list size="6">
       <item index="0" class="java.lang.String" itemvalue="Django server.Licenta" />
       <item index="1" class="java.lang.String" itemvalue="Django tests.Test: licenta.react_frontend.src.containers.nav.js" />
       <item index="2" class="java.lang.String" itemvalue="Django tests.Test: licenta.react_frontend.src.containers.mainapp.js" />
       <item index="3" class="java.lang.String" itemvalue="Python.lc_helpers" />
+      <item index="4" class="java.lang.String" itemvalue="Python tests.Unittest TestHelpers.test_extension_from_type" />
+      <item index="5" class="java.lang.String" itemvalue="Python tests.Unittests in TestHelpers" />
     </list>
     <recent_temporary>
-      <list size="3">
-        <item index="0" class="java.lang.String" itemvalue="Python.lc_helpers" />
-        <item index="1" class="java.lang.String" itemvalue="Django tests.Test: licenta.react_frontend.src.containers.mainapp.js" />
-        <item index="2" class="java.lang.String" itemvalue="Django tests.Test: licenta.react_frontend.src.containers.nav.js" />
+      <list size="5">
+        <item index="0" class="java.lang.String" itemvalue="Python tests.Unittests in TestHelpers" />
+        <item index="1" class="java.lang.String" itemvalue="Python tests.Unittest TestHelpers.test_extension_from_type" />
+        <item index="2" class="java.lang.String" itemvalue="Python.lc_helpers" />
+        <item index="3" class="java.lang.String" itemvalue="Django tests.Test: licenta.react_frontend.src.containers.mainapp.js" />
+        <item index="4" class="java.lang.String" itemvalue="Django tests.Test: licenta.react_frontend.src.containers.nav.js" />
       </list>
     </recent_temporary>
   </component>
@@ -784,6 +835,24 @@
     <history-entry file="Test__licenta_react_frontend_src_containers_mainapp_js - 2016.07.09 at 20h 39m 24s.xml">
       <configuration name="Test: licenta.react_frontend.src.containers.mainapp.js" configurationId="DjangoTestsConfigurationType" />
     </history-entry>
+    <history-entry file="Unittest_TestHelpers_test_extension_from_type - 2016.07.09 at 21h 50m 10s.xml">
+      <configuration name="Unittest TestHelpers.test_extension_from_type" configurationId="tests" />
+    </history-entry>
+    <history-entry file="Unittests_in_TestHelpers - 2016.07.09 at 22h 52m 25s.xml">
+      <configuration name="Unittests in TestHelpers" configurationId="tests" />
+    </history-entry>
+    <history-entry file="Unittests_in_TestHelpers - 2016.07.09 at 22h 52m 36s.xml">
+      <configuration name="Unittests in TestHelpers" configurationId="tests" />
+    </history-entry>
+    <history-entry file="Unittests_in_TestHelpers - 2016.07.09 at 22h 57m 13s.xml">
+      <configuration name="Unittests in TestHelpers" configurationId="tests" />
+    </history-entry>
+    <history-entry file="Unittests_in_TestHelpers - 2016.07.09 at 22h 58m 08s.xml">
+      <configuration name="Unittests in TestHelpers" configurationId="tests" />
+    </history-entry>
+    <history-entry file="Unittests_in_TestHelpers - 2016.07.09 at 22h 58m 24s.xml">
+      <configuration name="Unittests in TestHelpers" configurationId="tests" />
+    </history-entry>
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1920" height="1200" extended-state="0" />
@@ -795,7 +864,7 @@
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32957503" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32957503" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Mongo Explorer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -840,16 +909,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/licenta/licenta/react_frontend/src/reducers/reducer_current_view.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="150">
-          <caret line="12" column="1" selection-start-line="12" selection-start-column="1" selection-end-line="12" selection-end-column="1" />
-          <folding>
-            <element signature="e#0#42#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/licenta/licenta/react_frontend/src/reducers/reducer_image_process.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="135">
@@ -1158,44 +1217,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/licenta/licenta/settings.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="450">
-          <caret line="30" column="5" selection-start-line="30" selection-start-column="2" selection-end-line="30" selection-end-column="5" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/licenta/licenta/views.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="225">
-          <caret line="15" column="0" selection-start-line="15" selection-start-column="0" selection-end-line="15" selection-end-column="0" />
-          <folding>
-            <element signature="e#0#36#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/licenta/licenta/react_frontend/src/reducers/reducer_image_process.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="75">
-          <caret line="7" column="33" selection-start-line="7" selection-start-column="33" selection-end-line="7" selection-end-column="33" />
-          <folding>
-            <element signature="e#0#42#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/licenta/licenta/lc_helpers.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="105">
-          <caret line="7" column="20" selection-start-line="7" selection-start-column="20" selection-end-line="7" selection-end-column="20" />
-          <folding>
-            <element signature="e#7#16#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/licenta/licenta/react_frontend/src/actions/index.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="210">
@@ -1220,6 +1241,52 @@
           <caret line="10" column="0" selection-start-line="10" selection-start-column="0" selection-end-line="10" selection-end-column="0" />
           <folding>
             <element signature="e#0#26#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/licenta/licenta/views.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="315">
+          <caret line="21" column="34" selection-start-line="21" selection-start-column="34" selection-end-line="21" selection-end-column="34" />
+          <folding>
+            <element signature="e#0#36#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/licenta/licenta/settings.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="450">
+          <caret line="30" column="5" selection-start-line="30" selection-start-column="2" selection-end-line="30" selection-end-column="5" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/licenta/licenta/react_frontend/src/reducers/reducer_image_process.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="75">
+          <caret line="7" column="33" selection-start-line="7" selection-start-column="33" selection-end-line="7" selection-end-column="33" />
+          <folding>
+            <element signature="e#0#42#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file:///Library/Python/2.7/site-packages/magic.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="248">
+          <caret line="172" column="0" selection-start-line="172" selection-start-column="0" selection-end-line="172" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/licenta/licenta/lc_helpers.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-245">
+          <caret line="39" column="78" selection-start-line="39" selection-start-column="78" selection-end-line="39" selection-end-column="78" />
+          <folding>
+            <element signature="e#7#16#0" expanded="true" />
           </folding>
         </state>
       </provider>
