@@ -34,7 +34,7 @@ class MainApp extends Component {
                       activeClassName="dropbox_style_active"
                       ref="dropzone"
                       onDrop={(files) => {this.onDrop(files)}}>
-                <div style={{"text-align": "center", "margin-top": "150px"}}>
+                <div style={{textAlign: "center", marginTop: "150px"}}>
                     Analizeaza o imagine.
                 </div>
             </Dropzone>
