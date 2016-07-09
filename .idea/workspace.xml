@@ -3,7 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="eab26bbd-cc6b-42d7-b3f2-ffb590d23125" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/licenta/licenta/lc_helpers.py" afterPath="$PROJECT_DIR$/licenta/licenta/lc_helpers.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/licenta/licenta/views.py" afterPath="$PROJECT_DIR$/licenta/licenta/views.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/licenta/licenta/react_frontend/src/actions/index.js" afterPath="$PROJECT_DIR$/licenta/licenta/react_frontend/src/actions/index.js" />
     </list>
     <ignored path="Licenta.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -43,11 +43,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="index.js" pinned="false" current-in-tab="false">
+      <file leaf-file-name="index.js" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/licenta/licenta/react_frontend/src/actions/index.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="210">
-              <caret line="14" column="6" selection-start-line="14" selection-start-column="6" selection-end-line="14" selection-end-column="6" />
+            <state relative-caret-position="225">
+              <caret line="15" column="72" selection-start-line="15" selection-start-column="72" selection-end-line="15" selection-end-column="72" />
               <folding />
             </state>
           </provider>
@@ -60,6 +60,7 @@
               <caret line="21" column="34" selection-start-line="21" selection-start-column="34" selection-end-line="21" selection-end-column="34" />
               <folding>
                 <element signature="e#0#36#0" expanded="true" />
+                <marker date="1468100814000" expanded="true" signature="387:492" placeholder="..." />
               </folding>
             </state>
           </provider>
@@ -87,11 +88,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="lc_helpers.py" pinned="false" current-in-tab="true">
+      <file leaf-file-name="lc_helpers.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/licenta/licenta/lc_helpers.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-245">
-              <caret line="39" column="78" selection-start-line="39" selection-start-column="78" selection-end-line="39" selection-end-column="78" />
+            <state relative-caret-position="1075">
+              <caret line="94" column="59" selection-start-line="94" selection-start-column="59" selection-end-line="94" selection-end-column="59" />
               <folding>
                 <element signature="e#7#16#0" expanded="true" />
               </folding>
@@ -178,10 +179,10 @@
         <option value="$PROJECT_DIR$/licenta/licenta/react_frontend/lc_helpers.py" />
         <option value="$PROJECT_DIR$/licenta/licenta/react_frontend/lc_logic.py" />
         <option value="$PROJECT_DIR$/licenta/licenta/lc_logic.py" />
-        <option value="$PROJECT_DIR$/licenta/licenta/react_frontend/src/actions/index.js" />
         <option value="$PROJECT_DIR$/licenta/licenta/react_frontend/src/index.js" />
         <option value="$PROJECT_DIR$/licenta/licenta/views.py" />
         <option value="$PROJECT_DIR$/licenta/licenta/lc_helpers.py" />
+        <option value="$PROJECT_DIR$/licenta/licenta/react_frontend/src/actions/index.js" />
       </list>
     </option>
   </component>
@@ -864,7 +865,7 @@
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32957503" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32957503" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Mongo Explorer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -935,6 +936,7 @@
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
             <element signature="e#0#36#0" expanded="true" />
+            <marker date="1468100814000" expanded="true" signature="387:492" placeholder="..." />
           </folding>
         </state>
       </provider>
@@ -1217,14 +1219,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/licenta/licenta/react_frontend/src/actions/index.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="210">
-          <caret line="14" column="6" selection-start-line="14" selection-start-column="6" selection-end-line="14" selection-end-column="6" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/licenta/licenta/react_frontend/src/containers/mainapp.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="585">
@@ -1241,16 +1235,6 @@
           <caret line="10" column="0" selection-start-line="10" selection-start-column="0" selection-end-line="10" selection-end-column="0" />
           <folding>
             <element signature="e#0#26#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/licenta/licenta/views.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="315">
-          <caret line="21" column="34" selection-start-line="21" selection-start-column="34" selection-end-line="21" selection-end-column="34" />
-          <folding>
-            <element signature="e#0#36#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -1283,11 +1267,30 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/licenta/licenta/lc_helpers.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-245">
-          <caret line="39" column="78" selection-start-line="39" selection-start-column="78" selection-end-line="39" selection-end-column="78" />
+        <state relative-caret-position="1075">
+          <caret line="94" column="59" selection-start-line="94" selection-start-column="59" selection-end-line="94" selection-end-column="59" />
           <folding>
             <element signature="e#7#16#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/licenta/licenta/views.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="315">
+          <caret line="21" column="34" selection-start-line="21" selection-start-column="34" selection-end-line="21" selection-end-column="34" />
+          <folding>
+            <element signature="e#0#36#0" expanded="true" />
+            <marker date="1468100814000" expanded="true" signature="387:492" placeholder="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/licenta/licenta/react_frontend/src/actions/index.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="225">
+          <caret line="15" column="72" selection-start-line="15" selection-start-column="72" selection-end-line="15" selection-end-column="72" />
+          <folding />
         </state>
       </provider>
     </entry>

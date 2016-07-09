@@ -94,6 +94,5 @@ class TestHelpers(unittest.TestCase):
                                                                                                       tf))]
             self.assertNotIn(temp_file, current_temp_files)
 
-
         # Remove the test file
         os.remove("/Users/Michael/Desktop/test_file.txt")

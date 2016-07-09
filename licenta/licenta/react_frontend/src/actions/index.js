@@ -13,7 +13,7 @@ export function process_image(image) {
     process_request.attach(image.name, image);
     process_request.end((error, response) => {
         if (error == null) {
-            console.log("Success processing image!");
+            console.log("Success processing image! Response: ", response);
             return {
                 type: "IMAGE_PROCESS",
                 payload: response
