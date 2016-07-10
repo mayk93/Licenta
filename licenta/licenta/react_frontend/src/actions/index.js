@@ -16,7 +16,7 @@ export function process_image(image) {
             console.log("Success processing image! Response: ", response);
             return {
                 type: "IMAGE_PROCESS",
-                payload: response
+                payload: response.body
             };
         } else {
             console.log("Exception processing image!");

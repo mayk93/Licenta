@@ -21695,10 +21695,10 @@
 	    process_request.attach(image.name, image);
 	    process_request.end(function (error, response) {
 	        if (error == null) {
-	            console.log("Success processing image!");
+	            console.log("Success processing image! Response: ", response);
 	            return {
 	                type: "IMAGE_PROCESS",
-	                payload: response
+	                payload: response.body
 	            };
 	        } else {
 	            console.log("Exception processing image!");
