@@ -22,7 +22,8 @@ class MainApp extends Component {
         this.state = {
             dropzone_available: true,
             dropped_item: null,
-            preview: ""
+            preview: "",
+            endpoint: "/process_image_open_theano/"
         };
 
         this.onDrop = this.onDrop.bind(this);
@@ -64,7 +65,7 @@ class MainApp extends Component {
       }, () => {
             console.log("onDrop callback. Current state: ", this.state);
             console.log("This is dropped display: ", this.dropped_display);
-            this.props.process_image(dropped_item[0]);
+            this.props.process_image(dropped_item[0], this.state.endpoint);
         });
 
     }
@@ -72,28 +73,51 @@ class MainApp extends Component {
     render() {
         console.log("Rendering with state: ", this.state);
         return (
-            <div className="jumbotron">
+            <div>
+                <div className="jumbotron">
 
-                {this.state.dropzone_available ? this.dropzone_box() : this.dropped_display(this.state.preview)}
+                    {this.state.dropzone_available ? this.dropzone_box() : this.dropped_display(this.state.preview)}
 
-                {!this.state.dropzone_available ?
-                <div className="center_button">
-                    <button className="buttonStyle"
-                            onClick={() => {
-                                this.setState({
-                                    dropzone_available: true,
-                                    dropped_item: null,
-                                    preview: ""
-                                })
-                            }}>
-                        Incearca o alta imagine
-                    </button>
-                </div> : <div></div>}
+                    {!this.state.dropzone_available ?
+                    <div className="center_button">
+                        <button className="buttonStyle"
+                                onClick={() => {
+                                    this.setState({
+                                        dropzone_available: true,
+                                        dropped_item: null,
+                                        preview: ""
+                                    });
+                                }}>
+                            Incearca o alta imagine
+                        </button>
+                    </div> : <div></div>}
+                </div>
+
+                <div className="btn-group" role="group" aria-label="...">
+                  <button type="button"
+                          className="btn btn-default"
+                          onClick={() => {
+                            this.setState({
+                                endpoint: '/process_image_open_cv/'
+                            });
+                          }}>Endpoint Open CV</button>
+                  <button type="button"
+                          className="btn btn-default"
+                          onClick={() => {
+                            this.setState({
+                                endpoint: '/process_image_open_theano/'
+                            });
+                          }}>Endpoint Theano</button>
+                </div>
+
+                <div className="well">
+                    className: {this.state.endpoint}
+                </div>
             </div>
-
         );
     }
 }
+
 
 function mapStateToProps(state) {
     return {};

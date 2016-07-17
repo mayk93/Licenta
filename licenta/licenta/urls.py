@@ -22,7 +22,8 @@ import views
 
 urlpatterns = [
     url(r'^admin/', admin.site.urls),
-    url(r'^process_image/', views.process_image),
+    url(r'^process_image_open_cv/', views.process_image_open_cv),
+    url(r'^process_image_open_theano/', views.process_image_open_theano),
     # url(r'^', views.react_frontend),
 ]
 
