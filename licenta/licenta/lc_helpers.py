@@ -29,10 +29,10 @@ TYPE_TO_EXT = {
 '''
 
 def generate_chart_data():
-    PARAMETER = 3  # Hard coded for now, this will be guessed using theano
+    PARAMETER = 5  # Hard coded for now, this will be guessed using theano
     data = []
-    x_rand = numpy.linspace(-1, 1, 101)
-    y_rand = PARAMETER * x_rand + numpy.random.randn(*x_rand.shape) * 0.33
+    x_rand = numpy.linspace(-10, 10, 100)
+    y_rand = PARAMETER * x_rand + numpy.random.randn(*x_rand.shape) * 5
     for x, y in zip(x_rand, y_rand):
         data.append({"type": "scatter", "x": [float(x)], "y": [float(y)]})
 

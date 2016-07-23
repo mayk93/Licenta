@@ -31,18 +31,24 @@ export function process_image(image, endpoint) {
 }
 
 
+export function chart_reducer_laison(value) {
+    return {
+        type: "CHART_DATA",
+        payload: value
+    };
+}
+
+
 export function get_chart_data() {
+    console.log("Now get_chart_data");
     return function(dispatch) {
         var chart_request = request.get('/chart_data');
         chart_request.end((error, response) => {
             if (error == null) {
-                console.log("Success requesting data: ", response.body.data);
-                return {
-                    type: "CHART_DATA",
-                    payload: response.body.data
-                };
+                console.log("Success chart_request: ", response);
+                dispatch(chart_reducer_laison(response.body.data));
             } else {
-                console.log("Exception requesting chart data.");
+                console.log("Exception chart_request!");
                 return {
                     type: "CHART_DATA",
                     payload: []

@@ -20,31 +20,20 @@ import Plotly from 'react-plotlyjs';
 class TestApp extends Component {
     constructor(props) {
         super(props);
-        this.state = {
-            chart_data: []
-        };
-
         this.props.get_chart_data();
-
-        console.log("Constructor props: ", this.props);
     }
 
-    componentWillUpdate(new_props){
-        this.setState({
-           chart_data: this.props.chart_data
-        });
-
-        console.log("componentWillUpdate props: ", this.props);
-        console.log("componentWillUpdate new props: ", new_props);
-        console.log("componentWillUpdate state: ", this.state.chart_data);
-    }
 
     render() {
         console.log("Render props: ", this.props);
-        console.log("Render state: ", this.state);
 
         return (
-          <Plotly className="whatever" data={this.props.chart_data} />
+          <div>
+            <Plotly data={this.props.chart_data} />
+            <button type="button"
+                    className="btn btn-default"
+                    onClick={() => {this.props.get_chart_data()}}>New Chart</button>
+          </div>
         );
     }
 }
