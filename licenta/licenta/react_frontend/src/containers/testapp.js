@@ -11,7 +11,7 @@ import { connect } from 'react-redux';
 import { bindActionCreators } from 'redux';
 
 /* Actions */
-import { get_chart_data } from '../actions/index';
+import { get_chart_data, approximate_chart_function, clear_chart } from '../actions/index';
 
 /* Other */
 import Plotly from 'react-plotlyjs';
@@ -29,10 +29,13 @@ class TestApp extends Component {
 
         return (
           <div>
-            <Plotly data={this.props.chart_data} />
+            <Plotly data={this.props.chart_data.concat(this.props.approximation_data)} />
             <button type="button"
                     className="btn btn-default"
-                    onClick={() => {this.props.get_chart_data()}}>New Chart</button>
+                    onClick={() => {this.props.clear_chart(); this.props.get_chart_data()}}>New Chart</button>
+            <button type="button"
+                    className="btn btn-default"
+                    onClick={() => {this.props.approximate_chart_function(this.props.chart_data)}}>Solve</button>
           </div>
         );
     }
@@ -41,12 +44,13 @@ class TestApp extends Component {
 
 function mapStateToProps(state) {
     return {
-        chart_data: state.chart_data
+        chart_data: state.chart_data,
+        approximation_data: state.approximation_data
     };
 }
 
 function mapDispatchToProps(dispatch) {
-    return bindActionCreators({ get_chart_data }, dispatch);
+    return bindActionCreators({ get_chart_data, approximate_chart_function, clear_chart }, dispatch);
 }
 
 export default connect(mapStateToProps, mapDispatchToProps)(TestApp);

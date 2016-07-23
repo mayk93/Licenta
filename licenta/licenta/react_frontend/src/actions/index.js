@@ -30,10 +30,23 @@ export function process_image(image, endpoint) {
     }
 }
 
+export function clear_chart() {
+    return function(dispatch) {
+        dispatch(chart_reducer_laison([]));
+        dispatch(approximation_reducer_laison([]));
+    }
+}
 
 export function chart_reducer_laison(value) {
     return {
         type: "CHART_DATA",
+        payload: value
+    };
+}
+
+export function approximation_reducer_laison(value) {
+    return {
+        type: "APPROXIMATION_DATA",
         payload: value
     };
 }
@@ -51,6 +64,26 @@ export function get_chart_data() {
                 console.log("Exception chart_request!");
                 return {
                     type: "CHART_DATA",
+                    payload: []
+                };
+            }
+        });
+    }
+}
+
+export function approximate_chart_function(chart_data) {
+    console.log("Now sending to solve endpoint");
+    return function(dispatch) {
+        var approximate_request = request.post('/approximate/');
+        approximate_request.send({ data: chart_data });
+        approximate_request.end((error, response) => {
+            if (error == null) {
+                console.log("Success approximating! Response: ", response);
+                dispatch(approximation_reducer_laison(response.body.approximation));
+            } else {
+                console.log("Exception approximating!");
+                return {
+                    type: "APPROXIMATION_DATA",
                     payload: []
                 };
             }

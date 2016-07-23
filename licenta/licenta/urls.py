@@ -24,7 +24,8 @@ urlpatterns = [
     url(r'^admin/', admin.site.urls),
     url(r'^process_image_open_cv/', views.process_image_open_cv),
     url(r'^process_image_open_theano/', views.process_image_open_theano),
-    url(r'^chart_data/', views.get_chart_data)
+    url(r'^chart_data/', views.get_chart_data),
+    url(r'^approximate/', views.approximate)
     # url(r'^', views.react_frontend),
 ]
 

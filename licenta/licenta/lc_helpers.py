@@ -28,15 +28,22 @@ TYPE_TO_EXT = {
         ];
 '''
 
-def generate_chart_data():
-    PARAMETER = 5  # Hard coded for now, this will be guessed using theano
-    data = []
-    x_rand = numpy.linspace(-10, 10, 100)
-    y_rand = PARAMETER * x_rand + numpy.random.randn(*x_rand.shape) * 5
-    for x, y in zip(x_rand, y_rand):
-        data.append({"type": "scatter", "x": [float(x)], "y": [float(y)]})
-
-    return data
+def generate_chart_data(approximation=None):
+    if approximation is None:
+        PARAMETER = 5  # Hard coded for now, this will be guessed using theano
+        data = []
+        x_rand = numpy.linspace(-10, 10, 100)
+        y_rand = PARAMETER * x_rand + numpy.random.randn(*x_rand.shape) * 5
+        for x, y in zip(x_rand, y_rand):
+            data.append({"type": "scatter", "x": [float(x)], "y": [float(y)]})
+        return data
+    else:
+        data = []
+        x_rand = numpy.linspace(-10, 10, 100)
+        y_rand = approximation * x_rand
+        for x, y in zip(x_rand, y_rand):
+            data.append({"type": "scatter", "marker": {"color": "#000000"}, "x": [float(x)], "y": [float(y)]})
+        return data
 
 
 def extension_from_type(file_type):

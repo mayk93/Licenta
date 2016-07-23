@@ -62,6 +62,69 @@ def draft(file_path):
     print unicode(pixels_array)
 
 
+def process_data(raw_data):
+    '''
+    We know this is the structure we constructed for poltly in c_helpers. Now, we undo this structure.
+    :param raw_data:
+    :return:
+    '''
+    raw_list = raw_data["data"]
+    x_values, y_values = [], []
+    for item in raw_list:
+        x_values.append(item["x"])
+        y_values.append(item["y"])
+    x_values = numpy.array(x_values)
+    y_values = numpy.array(y_values)
+
+    return x_values, y_values
+
+# This is the actual symbolic model
+def model(X, W):
+    return X * W
+
+def approximate(raw_data):
+    # Important! These are nparrays
+    x_values, y_values = process_data(raw_data)
+
+    # Symbolic variables
+    X = T.scalar()
+    Y = T.scalar()
+
+    # W is a hybrid variable. Shared variables need to have data associated with them at definition, but can also be
+    # used in a symbolic context
+    # We use W in out model as weights
+    W = theano.shared(numpy.asarray(0., dtype=theano.config.floatX))
+    # The result of applying the model. Used in computing the actual cost
+    y = model(X, W)
+
+    # The cost function
+    # This tells us the 'error', how much 'off' we are in our prediction
+    cost = T.mean(T.sqr(y - Y))
+    # Using the grad function in theano, we get the partial derivative of the cost w.r.t ( with respect to ) the weights
+    gradient = T.grad(cost=cost, wrt=W)
+    # This is how we update the weights
+    updates = [[W, W - gradient * 0.01]]
+
+    # Compilation / load of model
+    # allow_input_downcast is for GPU optimization - change 64 bit float to 32 bit float
+
+    # Pickleing didn't go so well now - must change
+    if os.path.exists(PICKLED_OBJECTS_PATH + "linear_model.pk"):
+        with open(PICKLED_OBJECTS_PATH + "linear_model.pk", "rb") as source:
+            linear_model = cPickle.load(source)
+        linear_model = theano.function(inputs=[X, Y], outputs=cost, updates=updates, allow_input_downcast=True)
+    else:
+        linear_model = theano.function(inputs=[X,Y], outputs=cost, updates=updates, allow_input_downcast=True)
+        with open(PICKLED_OBJECTS_PATH + "linear_model.pk", "w+") as destination:
+            cPickle.dump(linear_model, destination, protocol=cPickle.HIGHEST_PROTOCOL)
+
+    for i in range(0, 100):
+        for x, y in zip(x_values, y_values):
+            linear_model(x[0], y[0])
+
+    return W.get_value()
+
+
 class TheanoImageProcessor(object):
     def __init__(self, image_path):
         self.image_path = image_path

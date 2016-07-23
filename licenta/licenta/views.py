@@ -1,3 +1,5 @@
+import json
+
 from django.http import JsonResponse
 from django.http import HttpResponseRedirect
 from django.views.decorators.csrf import csrf_exempt
@@ -17,6 +19,16 @@ def react_frontend(request):
 def get_chart_data(request):
     chart_data = lc_helpers.generate_chart_data()
     return JsonResponse({"data": chart_data})
+
+
+@csrf_exempt
+def approximate(request):
+    data = json.loads(request.body)
+    approximation = theano_tests.approximate(data)
+    print "Approximation: " + unicode(approximation)
+    print "Approximation Type: " + approximation.__class__.__name__
+    approximation_chart_data = lc_helpers.generate_chart_data(approximation=approximation)
+    return JsonResponse({"approximation": approximation_chart_data})
 
 
 @csrf_exempt
