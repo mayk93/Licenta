@@ -30,7 +30,6 @@ class FileManager(object):
 
     def write_chunked_filed(self):
         path = tempfile.mkstemp(prefix="chunked_", suffix=self.file_extension)[1]
-        print "[CHUNKED] Saving file here: " + path
         with open(path, "ab+") as destination:
             for chunk in self.managed_file.chunks():
                 destination.write(chunk)
@@ -41,6 +40,23 @@ class FileManager(object):
         with open(path, "ab+") as destination, self.managed_file as source:
                 destination.write(source.read())
         return path
+
+
+def file_request_setup(request):
+    '''
+    This method takes a request and sets up a file manager
+    :param request: A request with a file
+    :return: A FileManager object
+    '''
+    try:
+        key = request.FILES.keys()[0]
+    except IndexError as e:
+        return e
+
+    managed_file = request.FILES[key]
+    file_manager = FileManager(managed_file)
+
+    return file_manager
 
 
 import unittest

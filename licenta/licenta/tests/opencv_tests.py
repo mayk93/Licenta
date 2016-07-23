@@ -8,7 +8,7 @@ COLORED = cv2.IMREAD_COLOR  # Remove alpha but keep colours
 NORMAL = cv2.IMREAD_UNCHANGED  # Do not change image, keep colours and alpha
 
 
-class ImageProcessor(object):
+class OpenCVImageProcessor(object):
     def __init__(self, image_path):
         self.image_path = image_path
         # Read as gray scale to make processing simpler
@@ -32,6 +32,6 @@ class ImageProcessor(object):
 
 
 def process(file_path):
-    image_processor = ImageProcessor(file_path)
+    image_processor = OpenCVImageProcessor(file_path)
     image_processor.test()
     return {"path": file_path}

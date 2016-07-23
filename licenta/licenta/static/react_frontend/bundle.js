@@ -43610,7 +43610,7 @@
 	                _react2.default.createElement(
 	                    'div',
 	                    { className: 'well' },
-	                    'className: ',
+	                    'Endpoint: ',
 	                    this.state.endpoint
 	                )
 	            );

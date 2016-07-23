@@ -111,7 +111,7 @@ class MainApp extends Component {
                 </div>
 
                 <div className="well">
-                    className: {this.state.endpoint}
+                    Endpoint: {this.state.endpoint}
                 </div>
             </div>
         );
