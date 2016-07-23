@@ -3,8 +3,10 @@ import theano
 from theano import tensor as T
 
 # Other Libs
+import os
 import numpy
 from PIL import Image, ImageOps
+from six.moves import cPickle
 
 # Django
 from ..settings import PICKLED_OBJECTS_PATH
@@ -31,7 +33,13 @@ def draft(file_path):
     # to compile with theano.
     # This is the compiled function we can actually use
 
-    multiplication_function = theano.function(inputs=[a, b], outputs=y)
+    if os.path.exists(PICKLED_OBJECTS_PATH + "multiplication_function.pk"):
+        with open(PICKLED_OBJECTS_PATH + "multiplication_function.pk", "rb") as source:
+            multiplication_function = cPickle.load(source)
+    else:
+        multiplication_function = theano.function(inputs=[a, b], outputs=y)
+        with open(PICKLED_OBJECTS_PATH + "multiplication_function.pk", "w+") as destination:
+            cPickle.dump(multiplication_function, destination, protocol=cPickle.HIGHEST_PROTOCOL)
 
     print " -> " + unicode(multiplication_function(10, 5))
     print " -> " + unicode(multiplication_function(4, 2))
@@ -40,15 +48,6 @@ def draft(file_path):
     image = Image.open(file_path)
     image = ImageOps.grayscale(image)
     pixels_array = numpy.asarray(image)
-
-    # pixels_object = image.load()
-    # width, height = image.size
-    #
-    # pixels_array = []
-    # for x in range(width):
-    #     for y in range(height):
-    #         pixel = pixels_object[x, y]
-    #         pixels_array.append(pixel)
 
     print unicode(pixels_array)
 
