@@ -126,3 +126,5 @@ STATIC_URL = '/static/'
 
 STATICFILES_DIRS = (os.path.join(BASE_DIR, 'licenta/react_frontend/built/'),
                     os.path.join(BASE_DIR, 'licenta/react_frontend/style'))
+
+PICKLED_OBJECTS_PATH = os.path.join(BASE_DIR, "licenta/pickled_objects")
