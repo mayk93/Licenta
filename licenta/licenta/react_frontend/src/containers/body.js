@@ -11,6 +11,7 @@ import { bindActionCreators } from 'redux';
 
 /* Components and Containers */
 import MainApp from './mainapp';
+import TestApp from './testapp';
 
 import SearchApp from '../components/search';
 import Project from '../components/project';
@@ -25,6 +26,10 @@ class AppBody extends Component {
             return (
                 <MainApp />
             );
+        } else if (this.props.current_view == "test_app") {
+          return (
+              <TestApp />
+          );  
         } else if(this.props.current_view == "search") {
             return (
                 <SearchApp />

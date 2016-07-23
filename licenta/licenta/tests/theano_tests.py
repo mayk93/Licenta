@@ -14,6 +14,10 @@ from ..settings import PICKLED_OBJECTS_PATH
 # Mine
 from ..custom_decorators import custom
 
+'''
+[
+
+'''
 
 @custom.time_decorator
 def draft(file_path):
@@ -48,6 +52,12 @@ def draft(file_path):
     image = Image.open(file_path)
     image = ImageOps.grayscale(image)
     pixels_array = numpy.asarray(image)
+
+    # Continue with Theano - Let's try a very simple matrix operation
+    W = T.matrix("W")
+    x = T.matrix("x")
+    dot = T.dot(x, W)
+    y = T.nnet.sigmoid(dot)
 
     print unicode(pixels_array)
 

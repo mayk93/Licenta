@@ -29,3 +29,25 @@ export function process_image(image, endpoint) {
         });
     }
 }
+
+
+export function get_chart_data() {
+    return function(dispatch) {
+        var chart_request = request.get('/chart_data');
+        chart_request.end((error, response) => {
+            if (error == null) {
+                console.log("Success requesting data: ", response.body.data);
+                return {
+                    type: "CHART_DATA",
+                    payload: response.body.data
+                };
+            } else {
+                console.log("Exception requesting chart data.");
+                return {
+                    type: "CHART_DATA",
+                    payload: []
+                };
+            }
+        });
+    }
+}

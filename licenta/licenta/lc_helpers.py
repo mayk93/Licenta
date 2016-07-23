@@ -2,12 +2,41 @@
 import os
 import tempfile
 import magic
+import numpy
 
 
 TYPE_TO_EXT = {
     "image/jpeg": ".jpeg",
     "image/jpg": ".jpg"
 }
+
+'''
+          {
+            type: 'scatter',  // all "scatter" attributes: https://plot.ly/javascript/reference/#scatter
+            x: [1],     // more about "x": #scatter-x
+            y: [2],     // #scatter-y
+            marker: {         // marker is an object, valid marker keys: #scatter-marker
+            }
+          },
+          {
+            type: 'scatter',  // all "scatter" attributes: https://plot.ly/javascript/reference/#scatter
+            x: [3],     // more about "x": #scatter-x
+            y: [4],     // #scatter-y
+            marker: {         // marker is an object, valid marker keys: #scatter-marker
+            }
+          }
+        ];
+'''
+
+def generate_chart_data():
+    PARAMETER = 3  # Hard coded for now, this will be guessed using theano
+    data = []
+    x_rand = numpy.linspace(-1, 1, 101)
+    y_rand = PARAMETER * x_rand + numpy.random.randn(*x_rand.shape) * 0.33
+    for x, y in zip(x_rand, y_rand):
+        data.append({"type": "scatter", "x": [float(x)], "y": [float(y)]})
+
+    return data
 
 
 def extension_from_type(file_type):

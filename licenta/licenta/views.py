@@ -14,6 +14,11 @@ def react_frontend(request):
     return HttpResponseRedirect("/static/react_frontend/index.html")
 
 
+def get_chart_data(request):
+    chart_data = lc_helpers.generate_chart_data()
+    return JsonResponse({"data": chart_data})
+
+
 @csrf_exempt
 def process_image_open_cv(request):
     print "[Open CV] Received request"

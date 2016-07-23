@@ -37,6 +37,10 @@ class AppNav extends Component {
                             <p className="menuItems">Aplicatia principala</p>
                         </NavItem>
                         <NavItem href="#"
+                                 onClick={ () => {this.props.change_current_view("test_app")} }>
+                            <p className="menuItems">Teste</p>
+                        </NavItem>
+                        <NavItem href="#"
                                  onClick={ () => {this.props.change_current_view("search")} }>
                             <p className="menuItems">Cautare imagini</p>
                         </NavItem>

@@ -7,7 +7,6 @@ export default function (state = '', action) {
         case "VIEW_CHANGE":
             return action.payload;
         default:
-
             return state;
     }
 }
