@@ -15,11 +15,16 @@ import { get_chart_data, approximate_chart_function, clear_chart } from '../acti
 
 /* Other */
 import Plotly from 'react-plotlyjs';
-
+import { FormGroup, ControlLabel, FormControl } from 'react-bootstrap';
 
 class TestApp extends Component {
     constructor(props) {
         super(props);
+
+        this.state = {
+            slope: 5
+        };
+
         this.props.get_chart_data();
     }
 
@@ -36,6 +41,21 @@ class TestApp extends Component {
             <button type="button"
                     className="btn btn-default"
                     onClick={() => {this.props.approximate_chart_function(this.props.chart_data)}}>Solve</button>
+            <form>
+                <FormGroup>
+                    <ControlLabel>Slope (Not yet implemented)</ControlLabel>
+                    <FormControl
+                        type="text"
+                        value={this.state.value}
+                        placeholder="Enter slope value"
+                        onChange={(event) => {
+                            this.setState({
+                                slope: event.target.value
+                            });
+                        }}/>
+                    <FormControl.Feedback />
+                </FormGroup>
+            </form>
           </div>
         );
     }

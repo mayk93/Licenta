@@ -54,10 +54,10 @@ def draft(file_path):
     pixels_array = numpy.asarray(image)
 
     # Continue with Theano - Let's try a very simple matrix operation
-    W = T.matrix("W")
-    x = T.matrix("x")
-    dot = T.dot(x, W)
-    y = T.nnet.sigmoid(dot)
+    W = T.matrix("W")  # Weights
+    x = T.matrix("x")  # Inputs
+    dot = T.dot(x, W)  # Sum product ( value of "neuron" )
+    y = T.nnet.sigmoid(dot)  # Activation function
 
     print unicode(pixels_array)
 
