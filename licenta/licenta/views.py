@@ -50,7 +50,8 @@ def process_image_open_theano(request):
     if isinstance(image_manager, Exception):
         print "[Theano] Exception encountered:\n" + unicode(image_manager)
         return JsonResponse({"error": unicode(image_manager)})
-    result = theano_tests.process(image_manager.temp_path)
+    # result = theano_tests.process(image_manager.temp_path)
+    result = theano_tests.process_digits(image_manager.temp_path)
 
     ###
     '''
@@ -61,4 +62,4 @@ def process_image_open_theano(request):
     print unicode(result)
 
     del image_manager
-    return JsonResponse({"received": True})
+    return JsonResponse({"received": result})

@@ -3,6 +3,7 @@ import os
 import tempfile
 import magic
 import numpy
+import math
 
 
 TYPE_TO_EXT = {
@@ -28,7 +29,24 @@ TYPE_TO_EXT = {
         ];
 '''
 
-def generate_chart_data(approximation=None):
+'''
+0     5    10    15    25
+|-----|-----|-----|-----|
+
+25(total) / 5(nop) = 5(step)
+
+index % step = 0?
+
+'''
+
+def is_selection_point(index, number_of_points, total_points):
+    step = total_points / number_of_points
+    if index % number_of_points == 0:
+        return True
+    return False
+
+
+def generate_chart_data(approximation=None, approximation_line=True):
     if approximation is None:
         PARAMETER = 5  # Hard coded for now, this will be guessed using theano
         data = []
@@ -38,12 +56,26 @@ def generate_chart_data(approximation=None):
             data.append({"type": "scatter", "x": [float(x)], "y": [float(y)]})
         return data
     else:
-        data = []
-        x_rand = numpy.linspace(-10, 10, 100)
-        y_rand = approximation * x_rand
-        for x, y in zip(x_rand, y_rand):
-            data.append({"type": "scatter", "marker": {"color": "#000000"}, "x": [float(x)], "y": [float(y)]})
-        return data
+        if approximation_line:
+            data = []
+            x_rand = numpy.linspace(-10, 10, 100)
+            y_rand = approximation * x_rand
+            x_array = []
+            y_array = []
+            number_of_points = math.floor(approximation)
+            for index, (x, y) in enumerate(zip(x_rand, y_rand)):
+                if is_selection_point(index, number_of_points, len(x_array)):
+                    x_array.append(float(x))
+                    y_array.append(float(y))
+            data.append({"type": "scatter", "marker": {"color": "#000000"}, "x": x_array, "y": y_array})
+            return data
+        else:
+            data = []
+            x_rand = numpy.linspace(-10, 10, 100)
+            y_rand = approximation * x_rand
+            for x, y in zip(x_rand, y_rand):
+                data.append({"type": "scatter", "marker": {"color": "#000000"}, "x": [float(x)], "y": [float(y)]})
+            return data
 
 
 def extension_from_type(file_type):
