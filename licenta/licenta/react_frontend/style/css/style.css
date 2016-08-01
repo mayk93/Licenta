@@ -32,8 +32,7 @@
     width: 300px;
     background-color: #333;
     border-color: #101010;
-    border-radius: 3px
-;
+    border-radius: 3px;
     color: wheat;
 }
 
@@ -72,4 +71,9 @@
     .center_button {
         margin-left: 20vw;
     }
+}
+
+.my_label {
+    background-color: #333;
+    width: 300px;
 }

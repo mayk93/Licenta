@@ -7,6 +7,15 @@ export function change_current_view(target) {
     };
 }
 
+
+export function process_image_laison(value) {
+    return {
+        type: "IMAGE_PROCESS",
+        payload: value
+    };
+}
+
+
 export function process_image(image, endpoint) {
     console.log("Now processing image. Sending to: ", endpoint);
     return function(dispatch) {
@@ -15,16 +24,10 @@ export function process_image(image, endpoint) {
         process_request.end((error, response) => {
             if (error == null) {
                 console.log("Success processing image! Response: ", response);
-                return {
-                    type: "IMAGE_PROCESS",
-                    payload: response.body
-                };
+                dispatch(process_image_laison(response.body.prediction));
             } else {
                 console.log("Exception processing image!");
-                return {
-                    type: "IMAGE_PROCESS",
-                    payload: null
-                };
+                dispatch(process_image_laison(null));
             }
         });
     }

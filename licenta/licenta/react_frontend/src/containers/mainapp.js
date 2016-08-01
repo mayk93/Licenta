@@ -90,6 +90,11 @@ class MainApp extends Component {
                                 }}>
                             Incearca o alta imagine
                         </button>
+                        <h3>
+                            <span className="label my_label">
+                                Cel mai probabil aceasta este cifra: {this.props.image_process}
+                            </span>
+                        </h3>
                     </div> : <div></div>}
                 </div>
 
@@ -120,7 +125,9 @@ class MainApp extends Component {
 
 
 function mapStateToProps(state) {
-    return {};
+    return {
+        image_process: state.image_process
+    };
 }
 
 function mapDispatchToProps(dispatch) {

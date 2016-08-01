@@ -86,4 +86,4 @@ def process_image_open_theano(request):
     print unicode(result)
 
     del image_manager
-    return JsonResponse({"received": result})
+    return JsonResponse({"prediction": result})

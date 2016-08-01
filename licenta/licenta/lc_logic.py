@@ -6,7 +6,7 @@ from theano import tensor as T
 import os
 import numpy
 
-from six.moves import cPickle
+import dill as cPickle
 from PIL import Image, ImageOps
 
 # Django
@@ -80,8 +80,107 @@ def approximate(raw_data):
 # -----  This is where we begin the actual digit recognition ----- #
 
 
-from Learner import Learner  # This is out learning algorithm
+# from Learner import Learner  # This is our learning algorithm
 from lc_helpers import get_test_data, get_training_data, get_validation_data
+
+
+'''
+Pickle and dill are stupid. I need to import the Learner class here to make this work.
+'''
+
+##### ===== ----- This is the learner class. This should be abstracted away, but abstracting breaks ----- ===== #####
+
+'''
+See learner class for more details. This was added here because of pickling issues.
+'''
+
+class Learner(object):
+    '''
+    This is a classifier. It is a classic regression classifier.
+    We give it in input. The input is multiplied by a matrix of weights (W) and a bias is added.
+
+    This works something like this:
+
+    Inputs:
+
+    ( x0 )  --- w00 ---  ( b0 )
+            -         /
+              \_ w01 --- ( b1 )
+               \      | |
+               |_w02 --- ( b2 )
+                     / / /
+    ( x1 )  --- w10 / / /
+            \-- w11--/ /
+            --- w12 --/
+
+    ( x2 ) --- connects to b0, b1, b2 through w20, w21 and w22
+
+    We model this as matrix multiplication.
+
+    The input, x, is a matrix ( in Theano called Tensor ). We multiply the input by the weights and add the bias
+    to the result.
+    '''
+
+    def __init__(self, input_matrix, input_size, output_size):
+        '''
+
+        :param input: The input matrix. This can be a vector, an image ( as a matrix ) or a section of an image, for DL
+        :param input_size: The size of the input matrix. Needed to create appropriate sized weights.
+        :param output_size: The size of the output matrix.
+        '''
+
+        # This is the input
+        self.input = input_matrix
+
+        # Here we initialize the weights
+        self.W = theano.shared(value=numpy.zeros((input_size, output_size), dtype=theano.config.floatX),
+                               name='W',
+                               borrow=True)
+
+        # Here we initialize the biases
+        self.b = theano.shared(value=numpy.zeros((output_size,), dtype=theano.config.floatX),
+                               name='b',
+                               borrow=True)
+
+        # Here we define the actual prediction probability. This is P(Y=i|x,b,W) = softmax[i](Wx + b)
+        # Wx is modeled as a dot product, we add the bias and we apply the softmax function from the Theano library
+        self.prediction_probability = T.nnet.softmax(T.dot(self.input, self.W) + self.b)
+
+        # Here we choose the most likely prediction.
+        self.prediction = T.argmax(self.prediction_probability, axis=1)
+
+        # The model has as parameters the weights and the bias
+        self.params = [self.W, self.b]
+
+    def cost_method(self, labels, negative_log=True):
+        '''
+        This is the cost method of the learning algorithm, as a function of the labels.
+        When training the model, we use this function to penalize incorrect labeling.
+        The function used is negative log of the probability.
+
+        ===
+        I'm still not very sure how this works. I don't understand why this works better than
+        cost = T.mean(T.sqr(y - Y)), like the slope predictor.
+        ===
+
+        :param labels:
+        :return:
+        '''
+        if negative_log:
+            return -T.mean(T.log(self.prediction_probability)[T.arange(labels.shape[0]), labels])
+        else:
+            return T.mean(T.sqr(labels - self.prediction_probability))
+
+    def errors(self, correct_labels):
+        '''
+
+        :param correct_labels: A vector with the correct labels. Used to compare with the predictions to compute an
+                               error rate.
+        :return: Error rate as a float. We know the correct labels, we know out prediction, we compute a ration between
+                 the matches.
+        '''
+
+        return T.mean(T.neq(self.prediction, correct_labels))
 
 
 class ClassificationModel(object):
@@ -120,6 +219,9 @@ class IterationResult(object):
         self.example_increase = example_increase
         self.improvement_threshold = improvement_threshold
         self.stop_iterating = stop_iterating
+
+
+##### ===== ----- These clases should have been abstracted away ----- ===== #####
 
 
 def build_model(dataset_path, batch_size, learning_rate):
@@ -325,7 +427,7 @@ def train_model(classification_model,
 def gradient_descent(dataset_path=PICKLED_OBJECTS_PATH + 'mnist.pkl.gz',
                      batch_size=600,
                      learning_rate=0.15,
-                     no_of_iterations=500):
+                     no_of_iterations=1000):
 
     '''
     This is an implementation of the gradient decent learning method, using Theano.
@@ -361,10 +463,11 @@ def gradient_descent(dataset_path=PICKLED_OBJECTS_PATH + 'mnist.pkl.gz',
 
     print "Trained model. Now saving model as minst_digit_classifier."
 
-    with open(PICKLED_OBJECTS_PATH + 'minst_digit_classifier.pkl', 'wb') as f:
-        cPickle.dump(classifier, f)
+    with open(PICKLED_OBJECTS_PATH + 'minst_digit_classifier.pkl', 'wb') as destination:
+        cPickle.dump(classifier, destination)
 
     print "Saved the classifier. Gradient descent now done."
+
 
 def predict(image):
     """
@@ -374,16 +477,14 @@ def predict(image):
 
     pixels_array = numpy.asarray(image).flatten()
 
-    classifier = cPickle.load(open(PICKLED_OBJECTS_PATH + 'best_model.pkl'))
+    # classifier = cPickle.load(open(PICKLED_OBJECTS_PATH + 'best_model.pkl'))
+    classifier = cPickle.load(open(PICKLED_OBJECTS_PATH + 'minst_digit_classifier.pkl'))
 
     # Compile a predictor function
-    predict_model = theano.function(
-        inputs=[classifier.input],
-        outputs=classifier.y_pred)
+    predict_model = theano.function(inputs=[classifier.input],
+                                    outputs=classifier.prediction)
 
     predicted_value = predict_model([pixels_array])[0]
-    print("Predicted value:")
-    print(predicted_value)
     return predicted_value
 
 
@@ -395,8 +496,6 @@ def process_digits(file_path, learn=False):
         image = Image.open(file_path)
 
         predicted_value = predict(image)
-
-        print "Predicated: " + unicode(predicted_value)
 
         return predicted_value
 
