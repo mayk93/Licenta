@@ -37,7 +37,7 @@ class TestApp extends Component {
             <Plotly data={this.props.chart_data.concat(this.props.approximation_data)} />
             <button type="button"
                     className="btn btn-default"
-                    onClick={() => {this.props.clear_chart(); this.props.get_chart_data()}}>New Chart</button>
+                    onClick={() => {this.props.clear_chart(); this.props.get_chart_data(this.state.slope)}}>New Chart</button>
             <button type="button"
                     className="btn btn-default"
                     onClick={() => {this.props.approximate_chart_function(this.props.chart_data)}}>Solve</button>

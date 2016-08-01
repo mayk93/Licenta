@@ -4,6 +4,10 @@ import tempfile
 import magic
 import numpy
 import math
+import gzip
+import theano
+from theano import tensor as T
+from six.moves import cPickle
 
 
 TYPE_TO_EXT = {
@@ -39,16 +43,20 @@ index % step = 0?
 
 '''
 
+
 def is_selection_point(index, number_of_points, total_points):
+    if number_of_points == 0:
+        print "Called with number of points 0. Defaulting to 1"
+        number_of_points = 1
     step = total_points / number_of_points
     if index % number_of_points == 0:
         return True
     return False
 
 
-def generate_chart_data(approximation=None, approximation_line=True):
+def generate_chart_data(approximation=None, approximation_line=True, slope=5):
     if approximation is None:
-        PARAMETER = 5  # Hard coded for now, this will be guessed using theano
+        PARAMETER = slope
         data = []
         x_rand = numpy.linspace(-10, 10, 100)
         y_rand = PARAMETER * x_rand + numpy.random.randn(*x_rand.shape) * 5
@@ -68,13 +76,15 @@ def generate_chart_data(approximation=None, approximation_line=True):
                     x_array.append(float(x))
                     y_array.append(float(y))
             data.append({"type": "scatter", "marker": {"color": "#000000"}, "x": x_array, "y": y_array})
+            print "Returning Approximation plot."
             return data
         else:
             data = []
             x_rand = numpy.linspace(-10, 10, 100)
             y_rand = approximation * x_rand
             for x, y in zip(x_rand, y_rand):
-                data.append({"type": "scatter", "marker": {"color": "#000000"}, "x": [float(x)], "y": [float(y)]})
+                data.append({"type": "scatter", "x": [float(x)], "y": [float(y)]}) # , "marker": {"color": "#000000"}
+            print "Returning Scatter plot."
             return data
 
 
@@ -125,6 +135,87 @@ def file_request_setup(request):
     file_manager = FileManager(managed_file)
 
     return file_manager
+
+
+'''
+Important!
+
+These 3 methods have a default behaviour of shared. Because Theano is optimized to run on GPUs, we can load data into
+the GPU memory. This increases performance. Since we don't need the data sets to be loaded every time, we can just put
+them in a shared variable. It would be very slow to load them all the time. Turning off shared will return the raw data
+set, as read from the pickled source. Performance will decrease.
+'''
+
+
+def split_and_share(data_set):
+    '''
+
+    :param data_set: A data set, read from the pickled object
+    :return: 2 theano shared objects, one for the x tensor and another for the y tensor
+    '''
+
+    data_x, data_y = data_set
+
+    shared_x = theano.shared(numpy.asarray(data_x, dtype=theano.config.floatX),
+                             borrow=True)
+    shared_y = theano.shared(numpy.asarray(data_y, dtype=theano.config.floatX),
+                             borrow=True)
+
+    return shared_x, T.cast(shared_y, 'int32')
+
+
+def get_training_data(dataset_path, shared=True):
+    try:
+        with gzip.open(dataset_path, 'rb') as source:
+            try:
+                train_set, _, _ = cPickle.load(source, encoding='latin1')
+            except:
+                train_set, _, _ = cPickle.load(source)
+            if not shared:
+                print "[get_training_data] Returning raw data. This is bad and may break stuff."
+                return train_set
+            else:
+                train_set_x, train_set_y = split_and_share(train_set)
+    except IOError:
+        print "[get_training_data] No data found."
+        return None
+    return train_set_x, train_set_y
+
+
+def get_validation_data(dataset_path, shared=True):
+    try:
+        with gzip.open(dataset_path, 'rb') as source:
+            try:
+                _, validation_set, _ = cPickle.load(source, encoding='latin1')
+            except:
+                _, validation_set, _ = cPickle.load(source)
+            if not shared:
+                print "[get_validation_data] Returning raw data. This is bad and may break stuff."
+                return validation_set
+            else:
+                validation_set_x, validation_set_y = split_and_share(validation_set)
+    except IOError:
+        print "[get_validation_data] No data found."
+        return None
+    return validation_set_x, validation_set_y
+
+
+def get_test_data(dataset_path, shared=True):
+    try:
+        with gzip.open(dataset_path, 'rb') as source:
+            try:
+                _, _, test_set = cPickle.load(source, encoding='latin1')
+            except:
+                _, _, test_set = cPickle.load(source)
+            if not shared:
+                print "[get_test_data] Returning raw data. This is bad and may break stuff."
+                return test_set
+            else:
+                test_set_x, test_set_y = split_and_share(test_set)
+    except IOError:
+        print "[get_test_data] No data found."
+        return None
+    return test_set_x, test_set_y
 
 
 import unittest

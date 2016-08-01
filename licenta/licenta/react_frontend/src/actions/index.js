@@ -52,10 +52,14 @@ export function approximation_reducer_laison(value) {
 }
 
 
-export function get_chart_data() {
-    console.log("Now get_chart_data");
+export function get_chart_data(value) {
+    if ( typeof value == "undefined" ) {
+        value = 5;
+    }
+    console.log("Now get_chart_data. Slope: ", value);
     return function(dispatch) {
-        var chart_request = request.get('/chart_data');
+        var chart_request = request.post('/chart_data/');
+        chart_request.send({ slope: value });
         chart_request.end((error, response) => {
             if (error == null) {
                 console.log("Success chart_request: ", response);
